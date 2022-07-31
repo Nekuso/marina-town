@@ -9,11 +9,13 @@ function App() {
         <BrowserRouter>
             <GlobalStyle/>
               <Navbar/>
+              
               <div className="content">
                 <Routes>
                   <Route path="/" element={<Homepage/>} />
                 </Routes>
               </div>
+
         </BrowserRouter>
   );
 }

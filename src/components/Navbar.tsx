@@ -21,7 +21,7 @@ function Navbar() {
 
         <button 
           style={{
-              position: btnHam ? "fixed" : "relative",
+              position: btnHam && "fixed",
               top: btnHam ? 35 : "",
               right: btnHam ? 35 : "",
           }} 
