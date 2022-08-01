@@ -9,7 +9,6 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         -webkit-tap-highlight-color: transparent;
         font-family: 'Montserrat';
-        color: #000000;
     }
 
     html {
@@ -19,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
     
     body {
         overflow-x: hidden;
+        background: #000000;
     
     }
 `
