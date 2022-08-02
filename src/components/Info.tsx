@@ -2,12 +2,14 @@ import React from 'react'
 import {StyledInfo} from './styles/Info.styled'
 
 function Info() {
+
     return (
         <StyledInfo>
             <div className="info__section">
                 <div className="info">
                     <div className="info__destination">
-                        <h2>A LIFESTYLE DESTINATION</h2>
+                        <div className="info__destination__container">
+                            <h2>A LIFESTYLE DESTINATION</h2>
                             <div className="info__destination__details">
                                 <div className="destination__details">
                                     <h3>PROJECT TYPE</h3>
@@ -22,6 +24,7 @@ function Info() {
                                     <p>PHP 1.94M - 6.29M</p>
                                 </div>
                             </div>
+                        </div>
                         <div className="info__message">
                             <div className="message">
                                 <p>
@@ -41,20 +44,20 @@ function Info() {
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div className="reviews__container">
-                        <div className="reviews">
-                            <h2>+20K</h2>
-                            <p>Rooms Ready</p>
-                        </div>
-                        <div className="reviews"> 
-                            <h2>+50K</h2>
-                            <p>Costumers</p>
-                        </div>
-                        <div className="reviews">
-                            <h2>+100K</h2>
-                            <p>Reviews</p>
-                        </div>
+                <div className="reviews__container">
+                    <div className="reviews">
+                        <h2>+20K</h2>
+                        <p>Rooms Ready</p>
+                    </div>
+                    <div className="reviews"> 
+                        <h2>+50K</h2>
+                        <p>Costumers</p>
+                    </div>
+                    <div className="reviews">
+                        <h2>+100K</h2>
+                        <p>Reviews</p>
                     </div>
                 </div>
 
