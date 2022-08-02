@@ -202,12 +202,12 @@ export const StyledInfo = styled.div`
                             font-size: 2.2rem;
                         }
                         .info__destination__details {
-                            margin: 0 auto;
+                            margin: 1.5rem auto;
                             gap: 1rem;
                             .destination__details {
                                 text-align: start;
                                 h3 {
-                                    font-size: 1.5vw;
+                                    font-size: 2vw;
                                 }
                                 p {
                                     font-size: 1.5vw;
