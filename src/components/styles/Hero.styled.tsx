@@ -11,17 +11,16 @@ export const StyledHero = styled.div`
         background-size: cover;
         background-repeat: no-repeat;
         width: 100vw;
-        height: 60vh;
+        height: 500px;
 
         .hero__text {
             display: grid;
             width: 80vw;
-            margin: 0 auto;
             .hero__brand {
                 margin-bottom: 1.5rem;
                 h2{
                     font-size: 19vw;
-                    line-height: 4rem;
+                    line-height: 4.3rem;
                     font-family: 'Ibarra Real Nova', serif;
                 }
 
@@ -63,6 +62,111 @@ export const StyledHero = styled.div`
 
                 p {
                     font-size: 4vw;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+
+        .hero__section {
+            justify-content: start;
+            align-items: center;
+            height: 70vw;
+
+            .hero__text {
+                margin-left: 5rem;
+                width: 50vw;
+                .hero__brand {
+                    margin-bottom: .5rem;
+                    h2{
+                        font-size: 10vw;
+                    }
+                }
+                .hero__subtitle {
+                    text-align: left;
+                    p{
+                        font-size: 2.5vw;
+                    }
+                }
+                .hero__button {
+                    margin: 1rem 0;
+                    a {
+                        font-size: 5vw;
+                    }
+
+                    p {
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .hero__section {
+            height: 100vh;
+            background-size: 100% 100%;
+
+            .hero__text {
+                margin-left: 4rem;
+                width: 45vw;
+                .hero__brand {
+                    margin-bottom: .5rem;
+                    h2{
+                        line-height: 13vh;
+                        font-size: 10vw;
+                    }
+                }
+                .hero__subtitle {
+                    text-align: left;
+                    p{
+                        font-size: 2.2vw;
+                    }
+                }
+                .hero__button {
+                    a {
+                        font-size: 3vw;
+                        padding: 1rem;
+                    }
+                    p {
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .hero__section {
+            justify-content: start;
+            align-items: center;
+            height: 100vh;
+
+            .hero__text {
+                width: 450px;
+                .hero__brand {
+                    margin-bottom: .5rem;
+                    h2{
+                        font-size: 6.6rem;
+                    }
+                }
+                .hero__subtitle {
+                    text-align: left;
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }
+                .hero__button {
+                    margin: 1rem 0;
+                    a {
+                        padding: 1rem;
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        font-size: 1.3rem;
+                    }
                 }
             }
         }
