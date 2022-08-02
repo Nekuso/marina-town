@@ -72,7 +72,7 @@ export const StyledNavbar = styled.div `
     
         .nav__hamburger{
             cursor: pointer;  
-            display: block;
+            display: grid;
             position: relative;
             z-index: 101;
             
@@ -94,11 +94,6 @@ export const StyledNavbar = styled.div `
                 transform-origin: 0,0;
                 transition: .4s;
             }
-            
-            &:hover span:nth-child(2){
-                background: #929292e7;
-                transform: translateX(15px);
-            }
         }
         
         .is-active span:nth-child(1){
@@ -112,6 +107,16 @@ export const StyledNavbar = styled.div `
         .is-active span:nth-child(3){
             transform: translate(0px, -8px) rotate(-45deg);
             background: #FFFF;
+            width: 33px;
+        }
+        
+        span:nth-child(2){
+            justify-self: end;
+            width: 23px;
+        }
+        span:nth-child(3){
+            justify-self: end;
+            width: 13px;
         }
     }
     @media screen and (min-width: 769px) {

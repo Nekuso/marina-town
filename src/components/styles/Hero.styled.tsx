@@ -54,6 +54,15 @@ export const StyledHero = styled.div`
                     text-align: center;
                     font-size: 8vw;
                     border: 3px solid #FFFF;
+                    transition: .3s ease-in-out;
+                    
+                    &:hover {
+                        transform: rotate(90deg);
+                    }
+                }
+
+                p {
+                    font-size: 4vw;
                 }
             }
         }
