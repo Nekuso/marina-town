@@ -14,6 +14,7 @@ export const StyledHero = styled.div`
         height: 60vh;
 
         .hero__text {
+            display: grid;
             width: 80vw;
             margin: 0 auto;
             .hero__brand {
@@ -36,9 +37,13 @@ export const StyledHero = styled.div`
             }
             .hero__button {
                 display: flex;
+                justify-self: end;
+                margin: .5rem 0;
+                padding: .5rem 0;
                 gap: 1rem;
                 justify-content: center;
                 align-items: center;
+                border-top: 3px solid #fff;
 
                 a {
                     display: flex;
