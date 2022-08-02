@@ -79,6 +79,7 @@ export const StyledInfo = styled.div`
         .info__section {
             height: auto;
             .info {
+                padding-top: 3rem;
                 justify-content: center;
                 
                 .info__destination {
