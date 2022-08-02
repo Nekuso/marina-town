@@ -7,7 +7,7 @@ export const StyledInfo = styled.div`
 
         .info {
             width: 90vw;
-            margin: 1rem auto 0;
+            margin: 2rem auto 0;
             border-top: 5px solid #FFFFFFFF;
             padding-top: 1rem;
 
@@ -29,7 +29,7 @@ export const StyledInfo = styled.div`
                         .destination__details {
                             margin: 1rem auto;
                             text-align: center;
-                            flex: 1 1 50%;
+                            flex: 1 1 40%;
                             h3 {
                                 font-size: 5vw;
                             }
@@ -77,19 +77,167 @@ export const StyledInfo = styled.div`
 
     @media screen and (min-width: 768px) {
         .info__section {
+            height: auto;
             .info {
                 justify-content: center;
                 
                 .info__destination {
                     display: grid;
-                    grid-template-columns: 50% 50%;
+                    justify-content: space-between;
+                    grid-template-columns: 48% 50%;
+
                     .info__destination__container {
                         h2 {    
                             font-size: 3vw;
                         }
+                        .info__destination__details {
+                            gap: 1rem;
+                            .destination__details {
+                                margin: .5rem 0;
+                                text-align: start;
+                                h3 {
+                                    font-size: 2.5vw;
+                                }
+                                p {
+                                    font-size: 2vw;
+                                }
+                            }
+                        }
                     }
                 }
 
+                .info__message {
+                    gap: .5rem;
+                    .message {
+                        p {
+                            font-size: 2vw;
+                        }
+                    }
+                }
+            }
+
+            .reviews__container {
+                margin: 2.5rem 0;
+
+                .reviews {
+                    h2 {
+                        font-size: 6vw;
+                    }
+                    p {
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .info__section {
+            display: grid;
+            height: 100vh;
+
+            .info {
+                width: 85vw;
+                justify-content: center;
+                
+                .info__destination {
+                    .info__destination__container {
+                        h2 {    
+                            text-align: left;
+                            font-size: 2.2rem;
+                        }
+                        .info__destination__details {
+                            margin: 0 auto;
+                            gap: 1rem;
+                            .destination__details {
+                                text-align: start;
+                                h3 {
+                                    font-size: 1.5vw;
+                                }
+                                p {
+                                    font-size: 1.5vw;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .info__message {
+                    gap: 1rem;
+                    .message {
+                        p {
+                            font-size: 2vw;
+                        }
+                    }
+                }
+            }
+
+            .reviews__container {
+                margin: 2.5rem 0;
+
+                .reviews {
+                    h2 {
+                        font-size: 7vw;
+                    }
+                    p {
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .info__section {
+            height: 100vh;
+            
+            .info {
+                width: 80vw;
+                justify-content: center;
+                
+                .info__destination {
+                    .info__destination__container {
+                        h2 {    
+                            text-align: left;
+                            font-size: 2.2rem;
+                        }
+                        .info__destination__details {
+                            margin: 0 auto;
+                            gap: 1rem;
+                            .destination__details {
+                                text-align: start;
+                                h3 {
+                                    font-size: 1.5vw;
+                                }
+                                p {
+                                    font-size: 1.5vw;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .info__message {
+                    gap: 1rem;
+                    .message {
+                        p {
+                            font-size: 2vw;
+                        }
+                    }
+                }
+            }
+
+            .reviews__container {
+                margin: 2.5rem 0;
+
+                .reviews {
+                    h2 {
+                        font-size: 5vw;
+                    }
+                    p {
+                        font-size: 1.5vw;
+                    }
+                }
             }
         }
     }

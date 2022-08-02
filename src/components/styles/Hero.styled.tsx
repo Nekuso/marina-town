@@ -80,7 +80,7 @@ export const StyledHero = styled.div`
                 .hero__brand {
                     margin-bottom: .5rem;
                     h2{
-                        font-size: 10vw;
+                        font-size: 11vw;
                     }
                 }
                 .hero__subtitle {
