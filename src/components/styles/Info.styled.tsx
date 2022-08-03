@@ -7,7 +7,7 @@ export const StyledInfo = styled.div`
 
         .info {
             width: 90vw;
-            margin: 2rem auto 0;
+            margin: 5rem auto 0;
             border-top: 5px solid #FFFFFFFF;
             padding-top: 1rem;
 
@@ -31,7 +31,7 @@ export const StyledInfo = styled.div`
                             text-align: center;
                             flex: 1 1 40%;
                             h3 {
-                                font-size: 5vw;
+                                font-size: 4vw;
                             }
                             p {
                                 padding: .3rem 0;
