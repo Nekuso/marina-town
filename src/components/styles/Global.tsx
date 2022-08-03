@@ -8,19 +8,37 @@ const GlobalStyles = createGlobalStyle`
         list-style: none;
         box-sizing: border-box;
         -webkit-tap-highlight-color: transparent;
-        font-family: 'Montserrat';
+        font-family: 'Poppins';
         color: #FFFFFFFF;
     }
 
     html {
         scroll-behavior: smooth;
+        overflow: overlay;
         overflow-x: hidden;
     }
     
     body {
-        overflow-x: hidden;
         background: #000000;
+        width: 100vw;
+        max-width: 100vw;
+        overflow-x: hidden;
     }
+    
+    ::-webkit-scrollbar {
+        width: 10px;
+        background: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #ffffff62;
+        border-radius: 6px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0);
+    }
+    
 
 `
 export default GlobalStyles;

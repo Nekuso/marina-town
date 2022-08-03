@@ -15,7 +15,7 @@ export const StyledService = styled.div`
             justify-content: center;
             align-items: center;
             gap: 1rem;
-            grid-template-columns: 40% 27% 27%;
+            grid-template-columns: 38% 27% 27%;
             grid-template-rows: auto;
             grid-template-areas:
                 "service1 message message"
@@ -29,6 +29,7 @@ export const StyledService = styled.div`
             img {
                 width: 100%;
                 height: 100%;
+                border-radius: .5rem;
             }
 
             .service1 {
@@ -68,12 +69,14 @@ export const StyledService = styled.div`
                             width: auto;
                             font-weight: 500;
                             font-size: 3vw;
+                            padding: .5rem 1rem;
+                            border: 1px solid #ffffff;
                             
                             mark {
                                 background: none;
                                 transition: .3s ease-out;
                             }
-
+                            
                             &:hover mark{
                                 padding-left: .5rem;
                             }
@@ -83,8 +86,61 @@ export const StyledService = styled.div`
             }
         }
     }
-
+    
     @media screen and (min-width: 768px) {
-        
+        .service__container {
+            height: auto;
+            
+            .service {
+                grid-template-columns: 30% 30% 30%
+                width: 85vw;
+                gap: 1rem;
+
+                .service__message__container {
+                    .service__message {
+                        h2 {
+                            font-size: 5.5vw;
+                        }
+                        p {
+                            font-size: 2.4vw;
+                        }
+                        .service__link {
+                            a {
+                                font-size: 2.5vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .service__container {
+            height: 100vh;
+            margin: 0 auto;
+            
+            .service {
+                grid-template-columns: 35% 30% 30%;
+                gap: 1.5rem;
+                width: 80vw;
+
+                .service__message__container {
+                    .service__message {
+                        h2 {
+                            font-size: 4vw;
+                        }
+                        p {
+                            font-size: 1.7vw;
+                        }
+                        .service__link {
+                            a {
+                                font-size: 1.6vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 `

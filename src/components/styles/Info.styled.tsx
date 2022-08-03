@@ -66,7 +66,7 @@ export const StyledInfo = styled.div`
                 margin: 0 auto;
                 text-align: center;
                 h2 {
-                    font-size: 8vw;
+                    font-size: 7vw;
                 }
                 p {
                     font-size: 3vw;
@@ -90,6 +90,7 @@ export const StyledInfo = styled.div`
                     .info__destination__container {
                         h2 {    
                             font-size: 3vw;
+                            text-align: left;
                         }
                         .info__destination__details {
                             gap: 1rem;
@@ -134,7 +135,6 @@ export const StyledInfo = styled.div`
 
     @media screen and (min-width: 1000px) {
         .info__section {
-            display: grid;
             height: 100vh;
 
             .info {
@@ -190,8 +190,6 @@ export const StyledInfo = styled.div`
 
     @media screen and (min-width: 1200px) {
         .info__section {
-            height: 100vh;
-            
             .info {
                 width: 80vw;
                 justify-content: center;
@@ -222,7 +220,7 @@ export const StyledInfo = styled.div`
                     gap: 1rem;
                     .message {
                         p {
-                            font-size: 2vw;
+                            font-size: 1.7vw;
                         }
                     }
                 }
@@ -236,7 +234,7 @@ export const StyledInfo = styled.div`
                         font-size: 5vw;
                     }
                     p {
-                        font-size: 1.5vw;
+                        font-size: 1.7vw;
                     }
                 }
             }

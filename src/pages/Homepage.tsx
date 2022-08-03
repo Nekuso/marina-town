@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../components/Hero'
 import Info from '../components/Info'
 import Service from '../components/Service'
+import Units from '../components/Units'
 
 function Homepage() {
     return (
@@ -9,6 +10,7 @@ function Homepage() {
             <Hero/>
             <Info/>
             <Service/>
+            <Units/>
         </div>
     )
 }
