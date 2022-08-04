@@ -223,7 +223,7 @@ export const StyledUnits = styled.div`
                                 font-size: .9vw;
                             }
                             p:nth-child(1) {
-                                padding: 1rem 0 .5rem;
+                                padding: .5rem 0 .5rem;
                                 font-weight: 800;
                                 font-size: 1.6vw;
                             }

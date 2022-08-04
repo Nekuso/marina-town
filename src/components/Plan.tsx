@@ -1,11 +1,14 @@
 import React from 'react'
+import { StyledPlan } from './styles/Plan.styled';
 
 function Plan() {
   return (
-    <div className="plan__section">
+    <StyledPlan>
+        <div className="plan__section">
 
-    </div>
+        </div>
+    </StyledPlan>
   )
 }
 
-export default Plan
+export default Plan;
