@@ -6,16 +6,77 @@ export const StyledPlan = styled.div`
         justify-content: center;
         align-items: center;
         width: 100vw;
-        height: 100vh;
+        height: auto;
+        padding: 1rem 0;
 
         .plan__content {
-            width: 90vw;
+            width: 85vw;
+            margin: 0 auto;
             height: auto;
             
+            h2 {
+                font-size: 6vw;
+                width: auto;
+                text-align: center;
+                margin: 0 auto 1rem;
+            }
 
             .plan__container {
-                img {
-                    width: 100%;
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-items: center;
+                align-items: center;
+                gap: 2%;
+
+                .plan__img {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .plan__info {
+                    text-align: start;
+                    margin: 2rem auto;
+                    p {
+                        font-size: 3vw;
+                    }
+                    p:nth-child(1) {
+                        font-weight: 700;
+                        font-size: 5vw;
+                        margin: .5rem 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .plan__section {
+            .plan__content {
+                width: 90vw;
+                h2 {
+                    font-size: 5vw;
+                }
+
+                .plan__container {
+                    display: grid;
+                    grid-template-columns: 60% 40%;
+
+                    .plan__info {
+                        margin: 0 auto;
+
+                        p {
+                            font-size: 2vw;
+                        }
+
+                        p:nth-child(1) {
+                            font-weight: 700;
+                            font-size: 2.5vw;
+                            margin: .3rem 0;
+                        }
+                    }
                 }
             }
         }

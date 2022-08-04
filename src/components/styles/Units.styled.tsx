@@ -22,12 +22,12 @@ export const StyledUnits = styled.div`
                 }
 
                 p {
-                    font-size: 2.3vw;
+                    font-size: 2.8vw;
                 }
 
                 p:nth-child(3) {
                     margin: 1rem 0 1.5rem;
-                    font-size: 2.5vw;
+                    font-size: 2.9vw;
                 }
             }
 
@@ -64,7 +64,7 @@ export const StyledUnits = styled.div`
                         border-top: 1px solid white;
                         width: 100%;
                         p {
-                            font-size: 2.3vw;
+                            font-size: 2.6vw;
                         }
                         p:nth-child(1) {
                             padding: 1rem 0 0;
@@ -120,7 +120,7 @@ export const StyledUnits = styled.div`
 
                         .unit__info {
                             p {
-                                font-size: 1.1vw;
+                                font-size: 1.5vw;
                             }
 
                             p:nth-child(1) {
