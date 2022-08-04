@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const StyledInfo = styled.div`
+    display: grid;
+    justify-items: center;
+    align-items: center;
     .info__section {
         width: 100vw;
         height: auto;

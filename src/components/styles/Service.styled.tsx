@@ -120,6 +120,35 @@ export const StyledService = styled.div`
         }
     }
 
+    @media screen and (min-width: 1000px) {
+        .service__container {
+            height: 100vh;
+            margin: 0 auto;
+            
+            .service {
+                grid-template-columns: 35% 30% 30%;
+                gap: 1.5rem;
+                width: 80vw;
+
+                .service__message__container {
+                    .service__message {
+                        h2 {
+                            font-size: 4vw;
+                        }
+                        p {
+                            font-size: 1.7vw;
+                        }
+                        .service__link {
+                            a {
+                                font-size: 1.6vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     @media screen and (min-width: 1200px) {
         .service__container {
             height: 100vh;

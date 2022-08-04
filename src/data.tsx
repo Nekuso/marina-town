@@ -18,7 +18,7 @@ export const data = [
         features: "Living Room, Dining Room, Kitchen, 2 Bedrooms,  Toilet and Bath"
     },
     {
-        name: "3 Bednroom Unit",
+        name: "3 Bedroom Unit",
         img: BedroomUnit3,
         area: "64 sqm ±",
         features: "Living Room, Dining Room, Kitchen, 3 Bedrooms, 2 Toilet and Baths"
