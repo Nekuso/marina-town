@@ -1,9 +1,11 @@
 import React from 'react'
 
 function Form() {
-  return (
-    <div>Form</div>
-  )
+    return (
+        <div className="form__section">
+            
+        </div>
+    )
 }
 
 export default Form
