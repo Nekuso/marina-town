@@ -62,11 +62,45 @@ export const StyledLocation = styled.div `
         }
     }
 
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
         .location__section {
             .location__content {
-                h2 {
-                    font-size: 2vw;
+                width: 85vw;
+                h2{
+                    font-size: 5vw;
+                }
+
+                .location__container {
+                    justify-content: space-between;
+                    align-items: start;
+                    margin: 1rem auto;
+                    grid-template-columns: 50% 45%;
+
+                    .location__info {
+                        gap: 4%;
+                        .location__access {
+                            p{
+                                font-size: 1.5vw;
+                            }
+                            p:nth-child(1){
+                                font-weight: 700;
+                                font-size: 3vw;
+                                margin: .5rem 0;
+                            }
+                        }
+
+                        .location__landmarks{
+                            p{
+                                font-weight: 700;
+                                font-size: 3vw;
+                            }
+                            ul {
+                                li {
+                                    font-size: 1.5vw;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
