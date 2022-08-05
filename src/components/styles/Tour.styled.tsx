@@ -21,7 +21,7 @@ export const StyledTour = styled.div `
                 .vr__tour {
                     border-radius: 1rem;
                     width: 100%;
-                    height: 30vh;
+                    height: 40vh;
                 }
             }
         }
