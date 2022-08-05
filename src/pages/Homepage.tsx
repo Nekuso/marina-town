@@ -1,4 +1,5 @@
 import React from 'react'
+import Form from '../components/Form'
 import Hero from '../components/Hero'
 import Info from '../components/Info'
 import Location from '../components/Location'
@@ -17,6 +18,7 @@ function Homepage() {
             <Plan/>
             <Location/>
             <Tour/>
+            <Form/>
         </div>
     )
 }
