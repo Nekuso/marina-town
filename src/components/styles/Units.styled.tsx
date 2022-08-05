@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledUnits = styled.div`
     .units__section {
-        display: grid;
+        display: flex;
         justify-items: center;
         align-items: center;
         width: 100vw;

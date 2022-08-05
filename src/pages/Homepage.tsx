@@ -4,6 +4,7 @@ import Info from '../components/Info'
 import Location from '../components/Location'
 import Plan from '../components/Plan'
 import Service from '../components/Service'
+import Tour from '../components/Tour'
 import Units from '../components/Units'
 
 function Homepage() {
@@ -15,6 +16,7 @@ function Homepage() {
             <Units/>
             <Plan/>
             <Location/>
+            <Tour/>
         </div>
     )
 }

@@ -10,13 +10,13 @@ export const StyledLocation = styled.div `
         .location__content {
             width: 90vw;
             height: auto;
-            margin: 2rem auto;
+            margin: 1rem auto;
 
             h2 {
                 text-align: center;
                 font-size: 6vw; 
             }
-
+            
             .location__container {
                 display: grid;
                 justify-content: center;
@@ -24,10 +24,13 @@ export const StyledLocation = styled.div `
                 gap: 2rem;
                 width: 100%;
                 height: auto;
-
+                
                 .location__info {
                     display: grid;
+                    justify-content: center;
+                    align-items: center;
                     gap: 2%;
+                    height: auto;
                     .location__access {
                         p{
                             font-size: 3vw;
@@ -65,6 +68,7 @@ export const StyledLocation = styled.div `
     @media screen and (min-width: 768px) {
         .location__section {
             .location__content {
+                margin: 0 auto;
                 width: 85vw;
                 h2{
                     font-size: 5vw;
@@ -97,6 +101,88 @@ export const StyledLocation = styled.div `
                             ul {
                                 li {
                                     font-size: 1.5vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .location__section {
+            height: 100vh;
+            .location__content {
+                width: 85vw;
+                h2{
+                    font-size: 5vw;
+                }
+
+                .location__container {
+                    align-items: start;
+                    grid-template-columns: 50% 35%;
+
+                    .location__info {
+                        gap: 3%;
+                        .location__access {
+                            p{
+                                font-size: 1.5vw;
+                            }
+                            p:nth-child(1){
+                                font-size: 2.5vw;
+                                margin: .3rem 0;
+                            }
+                        }
+
+                        .location__landmarks{
+                            p{
+                                font-size: 2.5vw;
+                                margin: .3rem 0;
+                            }
+                            ul {
+                                li {
+                                    font-size: 1.5vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .location__section {
+            .location__content {
+                width: 80vw;
+                h2{
+                    font-size: 4vw;
+                }
+                
+                .location__container {
+                    align-items: start;
+                    grid-template-columns: 60% 35%;
+
+                    .location__info {
+                        .location__access {
+                            p{
+                                font-size: 1.4vw;
+                            }
+                            p:nth-child(1){
+                                font-size: 2.5vw;
+                                margin: .3rem 0;
+                            }
+                        }
+
+                        .location__landmarks{
+                            p{
+                                font-size: 2.5vw;
+                                margin: .3rem 0;
+                            }
+                            ul {
+                                li {
+                                    font-size: 1.4vw;
                                 }
                             }
                         }

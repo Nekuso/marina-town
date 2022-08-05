@@ -35,13 +35,20 @@ export const StyledPlan = styled.div`
                     position: relative;
                     
                     img {
+                        cursor: pointer;
                         width: 100%;
+                        transition: 0.3s ease-in-out;
+                        
+                        &:hover {
+                            transform: scale(1.1);
+                        }
                     }
                 }
 
                 .plan__info {
                     text-align: start;
                     margin: 2rem auto;
+                    text-align: center;
                     p {
                         font-size: 3vw;
                     }
@@ -58,6 +65,7 @@ export const StyledPlan = styled.div`
     @media screen and (min-width: 768px) {
         .plan__section {
             .plan__content {
+                margin: 2rem 0;
                 width: 90vw;
                 h2 {
                     font-size: 5vw;
@@ -68,6 +76,7 @@ export const StyledPlan = styled.div`
                     grid-template-columns: 60% 40%;
 
                     .plan__info {
+                        text-align: start;
                         margin: 0 auto;
 
                         p {
@@ -120,7 +129,7 @@ export const StyledPlan = styled.div`
             .plan__content {
 
                 h2 {
-                    font-size: 5vw;
+                    font-size: 4vw;
                 }
 
                 .plan__container {

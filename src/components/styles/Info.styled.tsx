@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledInfo = styled.div`
-    display: grid;
+    display: flex;
     justify-items: center;
     align-items: center;
     .info__section {
