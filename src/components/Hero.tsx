@@ -7,7 +7,7 @@ function Hero() {
 
     return (
         <StyledHero>
-            <div className="hero__section">
+            <div className="hero__section" id="Hero">
                 <div className="hero__text">
                     <div className="hero__brand">
                         <h2>Marina</h2>

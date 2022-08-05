@@ -31,6 +31,9 @@ export const StyledPlan = styled.div`
                 gap: 2%;
 
                 .plan__img {
+                    width: 100%;
+                    position: relative;
+                    
                     img {
                         width: 100%;
                     }
@@ -72,9 +75,67 @@ export const StyledPlan = styled.div`
                         }
 
                         p:nth-child(1) {
-                            font-weight: 700;
                             font-size: 2.5vw;
                             margin: .3rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .plan__section {
+            height: 100vh;
+
+            .plan__content {
+                width: 85vw;
+
+                h2 {
+                    font-size: 4vw;
+                }
+
+                .plan__container {
+                    justify-content: center;
+                    grid-template-columns: 55% 40%;
+                    margin: 1.5rem 0;
+                    
+                    .plan__info {
+                        p {
+                            font-size: 1.5vw;
+                        }
+
+                        p:nth-child(1) {
+                            font-size: 2.3vw;
+                            margin: .5rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .plan__section {
+            .plan__content {
+
+                h2 {
+                    font-size: 5vw;
+                }
+
+                .plan__container {
+                    justify-content: center;
+                    grid-template-columns: 55% 40%;
+                    margin: 1.5rem 0;
+                    
+                    .plan__info {
+                        p {
+                            font-size: 1.5vw;
+                        }
+
+                        p:nth-child(1) {
+                            font-size: 2.3vw;
+                            margin: .8rem 0;
                         }
                     }
                 }

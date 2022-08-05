@@ -5,7 +5,7 @@ function Info() {
 
     return (
         <StyledInfo>
-            <div className="info__section">
+            <div className="info__section" id="Info">
                 <div className="info">
                     <div className="info__destination">
                         <div className="info__destination__container">

@@ -5,7 +5,7 @@ import { data } from '../data'
 function Units() {
     return (
         <StyledUnits>
-            <div className="units__section">
+            <div className="units__section" id="About">
                 <div className="units__content">
                     <div className="units__message">
                         <h2>UNITS</h2>

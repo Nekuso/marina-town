@@ -6,7 +6,7 @@ import Service2 from '../img/Service2.png'
 function Service() {
     return (
         <StyledService>
-            <div className="service__container">
+            <div className="service__container" id="Service">
                 <div className="service">
                     <img src={Service1} alt="service1" className="service1"/>
                     <div className="service__message__container">

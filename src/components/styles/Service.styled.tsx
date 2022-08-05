@@ -122,8 +122,8 @@ export const StyledService = styled.div`
 
     @media screen and (min-width: 1000px) {
         .service__container {
-            height: 100vh;
             margin: 0 auto;
+            height: 100vh;
             
             .service {
                 grid-template-columns: 35% 30% 30%;

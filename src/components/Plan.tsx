@@ -2,6 +2,7 @@ import React from 'react'
 import { StyledPlan } from './styles/Plan.styled';
 import SitePlan from '../img/SitePlan.png';
 
+
 function Plan() {
     return (
         <StyledPlan>
@@ -10,7 +11,7 @@ function Plan() {
                     <h2>Site Development Plan</h2>
                     <div className="plan__container">
                         <div className="plan__img">
-                            <img src={SitePlan} alt="plan" />
+                            <img src={SitePlan} alt="plan"/>
                         </div>
                         <div className="plan__info">
                             <p>A well-Planned Community</p>

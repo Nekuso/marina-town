@@ -165,7 +165,7 @@ export const StyledUnits = styled.div`
                         flex: 0 0 30%;
 
                         h2 {
-                            font-size: 1vw;
+                            font-size: 1.5vw;
                         }
 
                         img {
@@ -174,7 +174,7 @@ export const StyledUnits = styled.div`
 
                         .unit__info {
                             p {
-                                font-size: .8vw;
+                                font-size: 1vw;
                             }
                         }
                     }

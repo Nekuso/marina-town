@@ -170,7 +170,7 @@ export const StyledInfo = styled.div`
                     gap: 1rem;
                     .message {
                         p {
-                            font-size: 2vw;
+                            font-size: 1.5vw;
                         }
                     }
                 }
