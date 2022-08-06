@@ -127,7 +127,7 @@ export const StyledPlan = styled.div`
     @media screen and (min-width: 1200px) {
         .plan__section {
             .plan__content {
-
+                width: 80vw;
                 h2 {
                     font-size: 4vw;
                 }
@@ -139,11 +139,11 @@ export const StyledPlan = styled.div`
                     
                     .plan__info {
                         p {
-                            font-size: 1.5vw;
+                            font-size: 1.3vw;
                         }
 
                         p:nth-child(1) {
-                            font-size: 2.3vw;
+                            font-size: 2vw;
                             margin: .8rem 0;
                         }
                     }

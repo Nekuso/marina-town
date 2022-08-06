@@ -155,7 +155,7 @@ export const StyledLocation = styled.div `
     @media screen and (min-width: 1200px) {
         .location__section {
             .location__content {
-                width: 80vw;
+                width: 70vw;
                 h2{
                     font-size: 4vw;
                 }
@@ -167,22 +167,22 @@ export const StyledLocation = styled.div `
                     .location__info {
                         .location__access {
                             p{
-                                font-size: 1.4vw;
+                                font-size: 1.2vw;
                             }
                             p:nth-child(1){
-                                font-size: 2.5vw;
+                                font-size: 2.3vw;
                                 margin: .3rem 0;
                             }
                         }
 
                         .location__landmarks{
                             p{
-                                font-size: 2.5vw;
+                                font-size: 2.3vw;
                                 margin: .3rem 0;
                             }
                             ul {
                                 li {
-                                    font-size: 1.4vw;
+                                    font-size: 1.2vw;
                                 }
                             }
                         }

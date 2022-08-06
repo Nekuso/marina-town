@@ -6,23 +6,21 @@ export const StyledInfo = styled.div`
     align-items: center;
 
     .info__section {
-        width: 100vw;
+        width: 100%;
         height: auto;
         position: relative;
 
         .bubble1 {
             position: absolute;
-            transform: translateX(8%) translateY(26%) scale(.8);
+            left: 60%;
+            top: 30%;
         }
         .bubble2 {
             position: absolute;
-            transform: translateX(15%) translateY(200%) scale(.9);
         }
         .rightblob {
+            width: 10%;
             position: absolute;
-            right: -100%;
-            bottom: -2%;
-            width: 140%;
             height: auto;
         }
 
@@ -100,22 +98,6 @@ export const StyledInfo = styled.div`
         .info__section {
             height: auto;
 
-            .bubble1 {
-                position: absolute;
-                transform: translateX(58%) translateY(8%) scale(.8);
-            }
-            .bubble2 {
-                position: absolute;
-                transform: translateX(85%) translateY(175%) scale(.9);
-            }
-            .rightblob {
-                position: absolute;
-                right: -90%;
-                bottom: -20%;
-                width: 130%;
-                height: auto;
-            }
-
             .info {
                 padding-top: 3rem;
                 justify-content: center;
@@ -179,22 +161,6 @@ export const StyledInfo = styled.div`
         algin-items: center;
         .info__section {
 
-            .bubble1 {
-                position: absolute;
-                transform: translateX(90%) translateY(30%) scale(1);
-            }
-            .bubble2 {
-                position: absolute;
-                transform: translateX(195%) translateY(145%) scale(1.2);
-            }
-            .rightblob {
-                position: absolute;
-                right: -100%;
-                bottom: -18%;
-                width: 130%;
-                height: auto;
-            }
-
             .info {
                 width: 85vw;
                 justify-content: center;
@@ -248,32 +214,15 @@ export const StyledInfo = styled.div`
 
     @media screen and (min-width: 1200px) {
         .info__section {
-
-            .bubble1 {
-                position: absolute;
-                transform: translateX(90%) translateY(45%) scale(1.5);
-            }
-            .bubble2 {
-                position: absolute;
-                transform: translateX(245%) translateY(195%) scale(1.2);
-            }
-            .rightblob {
-                position: absolute;
-                right: -90%;
-                bottom: -43%;
-                width: 120%;
-                height: auto;
-            }
-
             .info {
-                width: 80vw;
+                width: 70vw;
                 justify-content: center;
                 
                 .info__destination {
                     .info__destination__container {
                         h2 {    
                             text-align: left;
-                            font-size: 2.2rem;
+                            font-size: 2.2vw;
                         }
                         .info__destination__details {
                             margin: 1.5rem auto;
@@ -281,10 +230,10 @@ export const StyledInfo = styled.div`
                             .destination__details {
                                 text-align: start;
                                 h3 {
-                                    font-size: 2vw;
+                                    font-size: 1.7vw;
                                 }
                                 p {
-                                    font-size: 1.5vw;
+                                    font-size: 1.3vw;
                                 }
                             }
                         }
@@ -295,14 +244,17 @@ export const StyledInfo = styled.div`
                     gap: 1rem;
                     .message {
                         p {
-                            font-size: 1.7vw;
+                            font-size: 1.5vw;
                         }
                     }
                 }
             }
 
             .reviews__container {
-                margin: 2.5rem 0;
+                display: flex;
+                justify-content: space-between;
+                width: 70vw;
+                margin: 2.5rem auto;
 
                 .reviews {
                     h2 {

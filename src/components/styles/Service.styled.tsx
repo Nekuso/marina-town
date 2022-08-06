@@ -157,7 +157,7 @@ export const StyledService = styled.div`
             .service {
                 grid-template-columns: 35% 30% 30%;
                 gap: 1.5rem;
-                width: 80vw;
+                width: 70vw;
 
                 .service__message__container {
                     .service__message {
@@ -165,7 +165,7 @@ export const StyledService = styled.div`
                             font-size: 4vw;
                         }
                         p {
-                            font-size: 1.7vw;
+                            font-size: 1.5vw;
                         }
                         .service__link {
                             a {

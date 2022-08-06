@@ -184,24 +184,24 @@ export const StyledFooter = styled.div`
                     justify-content: space-around;
                     .footer__navigation {
                         h2 {
-                            font-size: 1.8vw;
+                            font-size: 1.4vw;
                         }
                         li{
                             margin: .8rem 0;
                             a {
-                                font-size: 1.3vw;
+                                font-size: 1.1vw;
                             }
                         }
                     }
 
                     .footer__company {
                         h2 {
-                            font-size: 1.8vw;
+                            font-size: 1.4vw;
                         }
                         li{
                             margin: .8rem 0;
                             a {
-                                font-size: 1.3vw;
+                                font-size: 1.1vw;
                             }
                         }
                     }
