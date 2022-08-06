@@ -1,11 +1,26 @@
-import React from 'react'
-import {StyledInfo} from './styles/Info.styled'
+import React, {useState, useEffect} from 'react';
+import {StyledInfo} from './styles/Info.styled';
+import Bubble1 from '../img/Bubble1.png';
+import Bubble2 from '../img/Bubble2.png';
+import RightBlob from '../img/RightBlob.png';
 
 function Info() {
 
+    const [offsetY, setOffsetY] = useState(0);
+    const handleScroll = () => setOffsetY(window.pageYOffset);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [])
+
     return (
+
         <StyledInfo>
             <div className="info__section" id="Info">
+            <img src={Bubble1} alt="Bubble1" className="bubble1" />
+            <img src={Bubble2} alt="Bubble2" className="bubble2"/>
+            <img src={RightBlob} alt="Bubble2" className="rightblob"/>
                 <div className="info">
                     <div className="info__destination">
                         <div className="info__destination__container">
@@ -60,7 +75,6 @@ function Info() {
                         <p>Reviews</p>
                     </div>
                 </div>
-
             </div>
         </StyledInfo>
     )
