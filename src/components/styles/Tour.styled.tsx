@@ -76,7 +76,7 @@ export const StyledTour = styled.div `
 
                 .tour__container {
                     .vr__tour {
-                        height: 65vh
+                        height: 80vh
                     }
                 }
             }

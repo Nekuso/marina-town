@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer'
 import Form from '../components/Form'
 import Hero from '../components/Hero'
 import Info from '../components/Info'
@@ -19,6 +20,7 @@ function Homepage() {
             <Location/>
             <Tour/>
             <Form/>
+            <Footer/>
         </div>
     )
 }

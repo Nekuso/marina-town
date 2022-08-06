@@ -4,6 +4,7 @@ export const StyledInfo = styled.div`
     display: flex;
     justify-items: center;
     align-items: center;
+
     .info__section {
         width: 100vw;
         height: auto;
@@ -137,9 +138,12 @@ export const StyledInfo = styled.div`
     }
 
     @media screen and (min-width: 1000px) {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        algin-items: center;
         .info__section {
-            height: 100vh;
-
             .info {
                 width: 85vw;
                 justify-content: center;

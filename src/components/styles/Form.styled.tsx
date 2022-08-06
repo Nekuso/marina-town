@@ -85,6 +85,7 @@ export const StyledForm = styled.div`
 
     @media (min-width: 768px) {
         .form__section {
+            height: 100vh;
             .form__content {
                 width: 85vw;
                 padding: 2rem 4rem;
