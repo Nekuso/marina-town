@@ -9,19 +9,41 @@ export const StyledInfo = styled.div`
         width: 100%;
         height: auto;
         position: relative;
-
+        
         .bubble1 {
+            width: 70vw;
             position: absolute;
-            left: 60%;
-            top: 30%;
+            left: 0;
+            top: 5%;
+            margin: 0 auto;
+            margin-left: 10%;
         }
         .bubble2 {
             position: absolute;
+            right: 0;
+            top: 65%;
+            margin: 0 auto;
+            margin-right: 10%;
+        }
+        .bubble3 {
+            width: 50vw;
+            position: absolute;
+            bottom: 35%;
+            left: 0;
+            margin: 0 auto;
+            margin-left: 10%;
         }
         .rightblob {
-            width: 10%;
             position: absolute;
-            height: auto;
+            width: 150vw;
+            right: 0;
+            bottom: -7%;
+            margin: 0 auto;
+            margin-right: -115vw;
+        }
+
+        .indexed {
+            z-index: -1;
         }
 
         .info {
@@ -97,7 +119,40 @@ export const StyledInfo = styled.div`
     @media screen and (min-width: 768px) {
         .info__section {
             height: auto;
-
+            
+            .bubble1 {
+                width: auto;
+                position: absolute;
+                left: 0;
+                top: 2%;
+                margin: 0 auto;
+                margin-left: 5%;
+            }
+            .bubble2 {
+                width: 20vw;
+                position: absolute;
+                right: 0;
+                top: 6%;
+                margin: 0 auto;
+                margin-right: 10%;
+            }
+            .bubble3 {
+                width: 30vw;
+                position: absolute;
+                bottom: 5%;
+                left: 0;
+                margin: 0 auto;
+                margin-left: 2%;
+            }
+            .rightblob {
+                position: absolute;
+                width: 130vw;
+                right: 0;
+                bottom: -20%;
+                margin: 0 auto;
+                margin-right: -95vw;
+            }
+            
             .info {
                 padding-top: 3rem;
                 justify-content: center;
@@ -161,6 +216,39 @@ export const StyledInfo = styled.div`
         algin-items: center;
         .info__section {
 
+            .bubble1 {
+                width: 25vw;
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin: 0 auto;
+                margin-left: 15%;
+            }
+            .bubble2 {
+                width: 25vw;
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 0 auto;
+                margin-right: 10%;
+            }
+            .bubble3 {
+                width: 30vw;
+                position: absolute;
+                bottom: -5%;
+                left: 0;
+                margin: 0 auto;
+                margin-left: 10%;
+            }
+            .rightblob {
+                position: absolute;
+                width: 130vw;
+                right: 0;
+                bottom: -40%;
+                margin: 0 auto;
+                margin-right: -100vw;
+            }
+
             .info {
                 width: 85vw;
                 justify-content: center;
@@ -214,6 +302,40 @@ export const StyledInfo = styled.div`
 
     @media screen and (min-width: 1200px) {
         .info__section {
+
+            .bubble1 {
+                width: 25vw;
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin: 0 auto;
+                margin-left: 5%;
+            }
+            .bubble2 {
+                width: 20vw;
+                position: absolute;
+                right: 0;
+                top: 0;
+                margin: 0 auto;
+                margin-right: 10%;
+            }
+            .bubble3 {
+                width: 30vw;
+                position: absolute;
+                bottom: -15%;
+                left: 0;
+                margin: 0 auto;
+                margin-left: 10%;
+            }
+            .rightblob {
+                position: absolute;
+                width: 120vw;
+                right: 0;
+                bottom: -20%;
+                margin: 0 auto;
+                margin-right: -95vw;
+            }
+
             .info {
                 width: 70vw;
                 justify-content: center;
