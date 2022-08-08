@@ -253,10 +253,10 @@ export const StyledLocation = styled.div `
             .bubble2 {
                 position: absolute;
                 width: 25vw;
-                top: 170%;
+                top: 175%;
                 right: 0;
                 left: 0;
-                margin-left: 35vw;
+                margin-left: 30vw;
                 z-index: -1;
             }
             

@@ -8,7 +8,7 @@ import Bubble3 from '../img/Bubble3.png';
 function Location() {
 
   const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);

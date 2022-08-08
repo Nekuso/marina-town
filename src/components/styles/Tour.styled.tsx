@@ -126,7 +126,7 @@ export const StyledTour = styled.div `
                 position: absolute;
                 width: 100vw;
                 right: 0;
-                bottom: -25%;
+                bottom: -150%;
                 margin-right: -55vw;
                 z-index: -1;
             }
@@ -135,7 +135,7 @@ export const StyledTour = styled.div `
                 position: absolute;
                 width: 30vw;
                 left: 0;
-                bottom: -15%;
+                bottom: -140%;
                 margin-left: 5vw;
                 z-index: -1;
             }
