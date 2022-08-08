@@ -1,11 +1,15 @@
 import React from 'react'
 import { StyledUnits } from './styles/Units.styled'
 import { data } from '../data'
+import RightLineBlob from '../img/RightLineBlob.png'
+import Bubble3 from '../img/Bubble3.png'
 
 function Units() {
     return (
         <StyledUnits>
             <div className="units__section" id="About">
+                <img src={RightLineBlob} alt="RightLineBlob" className="right__line__blob" />
+                <img src={Bubble3} alt="Bubble3" className="bubble3" />
                 <div className="units__content">
                     <div className="units__message">
                         <h2>UNITS</h2>

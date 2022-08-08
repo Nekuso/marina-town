@@ -16,7 +16,7 @@ export const StyledService = styled.div`
             width: 70vw;
             left: 0;
             margin-left: -20vw;
-            bottom: -20%;
+            bottom: -70%;
             z-index: -1;
         }
 
@@ -119,7 +119,7 @@ export const StyledService = styled.div`
                 width: 70vw;
                 left: 0;
                 margin-left: -25vw;
-                bottom: -50%;
+                bottom: -60%;
                 z-index: -1;
             }
     
@@ -164,8 +164,8 @@ export const StyledService = styled.div`
                 position: absolute;
                 width: 75vw;
                 left: 0;
-                margin-left: -25vw;
-                bottom: -30%;
+                margin-left: -30vw;
+                bottom: -75%;
                 z-index: -1;
             }
     
@@ -211,7 +211,7 @@ export const StyledService = styled.div`
                 width: 70vw;
                 left: 0;
                 margin-left: -25vw;
-                bottom: -20%;
+                bottom: -65%;
                 z-index: -1;
             }
     

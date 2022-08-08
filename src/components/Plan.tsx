@@ -1,12 +1,18 @@
 import React from 'react'
 import { StyledPlan } from './styles/Plan.styled';
 import SitePlan from '../img/SitePlan.png';
+import LeftBlob from '../img/LeftBlob.png';
+import Bubble1 from '../img/Bubble1.png';
+import Bubble3 from '../img/Bubble3.png';
 
 
 function Plan() {
     return (
         <StyledPlan>
             <div className="plan__section">
+                <img src={LeftBlob} alt="LeftBlob" className="left__blob" />
+                <img src={Bubble1} alt="Bubble1" className="bubble1" />
+                <img src={Bubble3} alt="Bubble3" className="bubble3" />
                 <div className="plan__content">
                     <h2>Site Development Plan</h2>
                     <div className="plan__container">

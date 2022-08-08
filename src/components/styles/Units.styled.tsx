@@ -7,6 +7,25 @@ export const StyledUnits = styled.div`
         align-items: center;
         width: 100vw;
         padding: 2rem 0;
+        position: relative;
+
+        .right__line__blob {
+            width: 100vw;
+            position: absolute;
+            bottom: 10%;
+            right: 0;
+            margin-right: -40vw;
+            z-index: -1;
+        }
+        
+        .bubble3 {
+            width: 70vw;
+            position: absolute;
+            bottom: 40%;
+            right: 0;
+            margin-right: 50vw;
+            z-index: -1;
+        }
         
         .units__content {
             width: 90vw;
@@ -89,6 +108,24 @@ export const StyledUnits = styled.div`
             justify-content: center;
             align-items: center;
 
+            .right__line__blob {
+                width: 60vw;
+                position: absolute;
+                bottom: -25%;
+                right: 0;
+                margin-right: -20vw;
+                z-index: -1;
+            }
+            
+            .bubble3 {
+                width: 30vw;
+                position: absolute;
+                bottom: -10%;
+                left: 0;
+                margin-left: 5vw;
+                z-index: -1;
+            }
+
             .units__content {
                 .units__message {
                     h2 {
@@ -139,6 +176,25 @@ export const StyledUnits = styled.div`
         .units__section {
             height: 100vh;
             max-height: 100vh;
+
+            .right__line__blob {
+                width: 60vw;
+                position: absolute;
+                bottom: -45%;
+                right: 0;
+                margin-right: -30vw;
+                z-index: -1;
+            }
+            
+            .bubble3 {
+                width: 30vw;
+                position: absolute;
+                bottom: -15%;
+                left: 0;
+                margin-left: 10vw;
+                z-index: -1;
+            }
+
             .units__content {
                 .units__message {
                     h2 {
