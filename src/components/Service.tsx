@@ -2,11 +2,16 @@ import React from 'react'
 import { StyledService } from './styles/Service.styled'
 import Service1 from '../img/Service1.png'
 import Service2 from '../img/Service2.png'
+import LeftLineBlob from '../img/LeftLineBlob.png'
+import Bubble1 from '../img/Bubble2.png'
 
 function Service() {
+
     return (
         <StyledService>
             <div className="service__container" id="Service">
+                <img src={LeftLineBlob} alt="LeftLineBlob" className="left__line__blob" />
+                <img src={Bubble1} alt="Bubble1" className="bubble1" />
                 <div className="service">
                     <img src={Service1} alt="service1" className="service1"/>
                     <div className="service__message__container">

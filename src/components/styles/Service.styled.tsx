@@ -9,6 +9,24 @@ export const StyledService = styled.div`
         width: 100vw;
         height: auto;
         margin: 1rem auto;
+        position: relative;
+
+        .left__line__blob {
+            position: absolute;
+            width: 70vw;
+            left: 0;
+            margin-left: -20vw;
+            bottom: -20%;
+            z-index: -1;
+        }
+
+        .bubble1 {
+            position: absolute;
+            right: 5%;
+            bottom: -30%;
+            width: 25vw;
+            z-index: -1;
+        }
         
         .service {
             display: grid;
@@ -95,6 +113,23 @@ export const StyledService = styled.div`
     @media screen and (min-width: 768px) {
         .service__container {
             height: auto;
+
+            .left__line__blob {
+                position: absolute;
+                width: 70vw;
+                left: 0;
+                margin-left: -25vw;
+                bottom: -50%;
+                z-index: -1;
+            }
+    
+            .bubble1 {
+                position: absolute;
+                right: 5%;
+                bottom: -30%;
+                width: 20vw;
+                z-index: -1;
+            }
             
             .service {
                 grid-template-columns: 30% 30% 30%
@@ -124,6 +159,23 @@ export const StyledService = styled.div`
         .service__container {
             margin: 0 auto;
             height: 100vh;
+
+            .left__line__blob {
+                position: absolute;
+                width: 75vw;
+                left: 0;
+                margin-left: -25vw;
+                bottom: -30%;
+                z-index: -1;
+            }
+    
+            .bubble1 {
+                position: absolute;
+                right: 5%;
+                bottom: -10%;
+                width: 20vw;
+                z-index: -1;
+            }
             
             .service {
                 grid-template-columns: 35% 30% 30%;
@@ -153,6 +205,23 @@ export const StyledService = styled.div`
         .service__container {
             height: 100vh;
             margin: 0 auto;
+
+            .left__line__blob {
+                position: absolute;
+                width: 70vw;
+                left: 0;
+                margin-left: -25vw;
+                bottom: -20%;
+                z-index: -1;
+            }
+    
+            .bubble1 {
+                position: absolute;
+                right: 5%;
+                bottom: -10%;
+                width: 20vw;
+                z-index: -1;
+            }
             
             .service {
                 grid-template-columns: 35% 30% 30%;
