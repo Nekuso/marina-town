@@ -244,7 +244,7 @@ export const StyledLocation = styled.div `
             .left__line_blob {
                 width: 75vw;
                 position: absolute;
-                top: 60%;
+                top: 165%;
                 left: 0;
                 margin-left: -35vw;
                 z-index: -1;
@@ -253,7 +253,7 @@ export const StyledLocation = styled.div `
             .bubble2 {
                 position: absolute;
                 width: 25vw;
-                top: 30%;
+                top: 170%;
                 right: 0;
                 left: 0;
                 margin-left: 35vw;
@@ -263,7 +263,7 @@ export const StyledLocation = styled.div `
             .bubble3 {
                 position: absolute;
                 width: 30vw;
-                bottom: -15%;
+                bottom: -165%;
                 right: 0;
                 margin-right: 10vw;
                 z-index: -1;
