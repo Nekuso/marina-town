@@ -17,13 +17,13 @@ function Units() {
     
     return (
         <StyledUnits>
-            <div className="units__section" id="About">
+            <div className="units__section">
                 <img src={RightLineBlob} alt="RightLineBlob" className="right__line__blob"
                 style={{ transform: `translateY(-${offsetY * 0.07}px)` }} />
                 <img src={Bubble3} alt="Bubble3" className="bubble3" 
                 style={{ transform: `translateY(-${offsetY * 0.19}px)` }}/>
-                <div className="units__content">
-                    <div className="units__message">
+                <div className="units__content" id="About">
+                    <div className="units__message" >
                         <h2>UNITS</h2>
                         <p>Space to Pursue Your Passions</p>
                         <p>Marina Spatial offers typical 2-bedroom units with open-plan<br/>

@@ -18,7 +18,7 @@ function Info() {
     return (
 
         <StyledInfo>
-            <div className="info__section" id="Info">
+            <div className="info__section">
                 <img src={Bubble1} alt="Bubble1" className="bubble1 indexed" 
                 style={{ transform: `translateY(-${offsetY * 0.07}px)` }} />
                 <img src={Bubble2} alt="Bubble2" className="bubble2 indexed"
@@ -27,8 +27,8 @@ function Info() {
                 style={{ transform: `translateY(-${offsetY * 0.2}px)` }} />
                 <img src={RightBlob} alt="RightBlob" className="rightblob indexed"
                 style={{ transform: `translateY(-${offsetY * 0.1}px)` }} />
-                <div className="info">
-                    <div className="info__destination">
+                <div className="info" id="Info">
+                    <div className="info__destination" >
                         <div className="info__destination__container">
                             <h2>A LIFESTYLE DESTINATION</h2>
                             <div className="info__destination__details">

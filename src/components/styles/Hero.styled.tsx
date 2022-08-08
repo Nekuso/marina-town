@@ -16,6 +16,7 @@ export const StyledHero = styled.div`
         .hero__text {
             display: grid;
             width: 80vw;
+            
             .hero__brand {
                 margin-bottom: 1.5rem;
                 h2{

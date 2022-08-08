@@ -244,7 +244,7 @@ export const StyledLocation = styled.div `
             .left__line_blob {
                 width: 75vw;
                 position: absolute;
-                top: 165%;
+                top: 155%;
                 left: 0;
                 margin-left: -35vw;
                 z-index: -1;

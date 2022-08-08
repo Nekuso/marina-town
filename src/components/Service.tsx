@@ -18,12 +18,12 @@ function Service() {
     
     return (
         <StyledService>
-            <div className="service__container" id="Service">
+            <div className="service__container">
                 <img src={LeftLineBlob} alt="LeftLineBlob" className="left__line__blob"
                 style={{ transform: `translateY(-${offsetY * 0.17}px)` }} />
                 <img src={Bubble1} alt="Bubble1" className="bubble1"
                 style={{ transform: `translateY(-${offsetY * 0.07}px)` }} />
-                <div className="service">
+                <div className="service" id="Service">
                     <img src={Service1} alt="service1" className="service1"/>
                     <div className="service__message__container">
                         <div className="service__message">
