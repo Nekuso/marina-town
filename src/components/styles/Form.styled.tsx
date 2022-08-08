@@ -7,12 +7,41 @@ export const StyledForm = styled.div`
         align-items: center;
         width: 100vw;
         position: relative;
+        overflow: hidden;
 
         .left__blob__2 {
             position: absolute;
-            width: 70vw;
-            top: 0;
+            width: 180vw;
+            top: 10%;
             left: 0;
+            margin-left: -155vw;
+            z-index: -1;
+        }
+        
+        .bubble1 {
+            position: absolute;
+            width: 60vw;
+            top: 50%;
+            left: 0;
+            margin-left: 2vw;
+            z-index: -1;
+        }
+
+        .bubble3 {
+            position: absolute;
+            width: 55vw;
+            top: 15%;
+            right: 0;
+            margin-right: 2vw;
+            z-index: -1;
+        }
+
+        .right__line__blob {
+            position: absolute;
+            width: 100vw;
+            bottom: -20%;
+            right: 0;
+            margin-right: -40%;
         }
         
         .form__content {
@@ -94,6 +123,43 @@ export const StyledForm = styled.div`
     @media (min-width: 768px) {
         .form__section {
             height: 100vh;
+
+            .left__blob__2 {
+                position: absolute;
+                width: 140vw;
+                top: 10%;
+                left: 0;
+                margin-left: -110vw;
+                z-index: -1;
+            }
+            
+            .bubble1 {
+                position: absolute;
+                width: 25vw;
+                top: 75%;
+                left: 0;
+                margin-left: 20vw;
+                z-index: -1;
+            }
+    
+            .bubble3 {
+                position: absolute;
+                width: 25vw;
+                top: 30%;
+                right: 0;
+                margin-right: 10vw;
+                z-index: -1;
+            }
+            
+            .right__line__blob {
+                position: absolute;
+                width: 50vw;
+                bottom: -15%;
+                right: 0;
+                margin-right: -15%;
+                z-index: -1;
+            }
+
             .form__content {
                 width: 85vw;
                 padding: 2rem 4rem;
@@ -136,6 +202,43 @@ export const StyledForm = styled.div`
     @media (min-width: 1000px) {
         .form__section {
             height: 100vh;
+
+            .left__blob__2 {
+                position: absolute;
+                width: 140vw;
+                top: 20%;
+                left: 0;
+                margin-left: -115vw;
+                z-index: -1;
+            }
+            
+            .bubble1 {
+                position: absolute;
+                width: 20vw;
+                top: 75%;
+                left: 0;
+                margin-left: 20vw;
+                z-index: -1;
+            }
+    
+            .bubble3 {
+                position: absolute;
+                width: 15vw;
+                top: 30%;
+                right: 0;
+                margin-right: 10vw;
+                z-index: -1;
+            }
+            
+            .right__line__blob {
+                position: absolute;
+                width: 40vw;
+                bottom: -35%;
+                right: 0;
+                margin-right: -15%;
+                z-index: -1;
+            }
+
             .form__content {
                 padding: 3rem 4rem;
 
@@ -176,6 +279,43 @@ export const StyledForm = styled.div`
     @media (min-width: 1200px) {
         .form__section {
             height: 100vh;
+
+            .left__blob__2 {
+                position: absolute;
+                width: 100vw;
+                top: 15%;
+                left: 0;
+                margin-left: -80vw;
+                z-index: -1;
+            }
+            
+            .bubble1 {
+                position: absolute;
+                width: 20vw;
+                top: 75%;
+                left: 0;
+                margin-left: 20vw;
+                z-index: -1;
+            }
+    
+            .bubble3 {
+                position: absolute;
+                width: 15vw;
+                top: 30%;
+                right: 0;
+                margin-right: 10vw;
+                z-index: -1;
+            }
+            
+            .right__line__blob {
+                position: absolute;
+                width: 40vw;
+                bottom: -35%;
+                right: 0;
+                margin-right: -15%;
+                z-index: -1;
+            }
+
             .form__content {
                 width: 70vw;
                 padding: 3rem 4rem;

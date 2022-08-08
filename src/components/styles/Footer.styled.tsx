@@ -146,7 +146,7 @@ export const StyledFooter = styled.div`
                         li{
                             margin: .5rem 0;
                             a {
-                                font-size: 1.3vw;
+                                font-size: 1.1vw;
                             }
                         }
                     }
@@ -158,7 +158,7 @@ export const StyledFooter = styled.div`
                         li{
                             margin: .2rem 0;
                             a {
-                                font-size: 1.3vw;
+                                font-size: 1.1vw;
                             }
                         }
                     }
@@ -184,19 +184,19 @@ export const StyledFooter = styled.div`
                     justify-content: space-around;
                     .footer__navigation {
                         h2 {
-                            font-size: 1.4vw;
+                            font-size: 1.2vw;
                         }
                         li{
                             margin: .8rem 0;
                             a {
-                                font-size: 1.1vw;
+                                font-size: 1vw;
                             }
                         }
                     }
 
                     .footer__company {
                         h2 {
-                            font-size: 1.4vw;
+                            font-size: 1.2vw;
                         }
                         li{
                             margin: .8rem 0;

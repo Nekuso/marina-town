@@ -9,7 +9,7 @@ function Form() {
     return (
         <StyledForm>
             <div className="form__section">
-                <img src={LeftBlob2} alt="LeftBlob2" className="left__blob_2" />
+                <img src={LeftBlob2} alt="LeftBlob2" className="left__blob__2" />
                 <img src={Bubble1} alt="Bubble1" className="bubble1" />
                 <img src={Bubble3} alt="Bubble3" className="bubble3" />
                 <img src={RightLineBlob} alt="RightLineBlob" className="right__line__blob" />
