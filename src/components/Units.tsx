@@ -1,15 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { StyledUnits } from './styles/Units.styled'
 import { data } from '../data'
 import RightLineBlob from '../img/RightLineBlob.png'
 import Bubble3 from '../img/Bubble3.png'
 
 function Units() {
+
+    const [offsetY, setOffsetY] = useState(0);
+    const handleScroll = () => setOffsetY(window.pageYOffset);
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+    
     return (
         <StyledUnits>
             <div className="units__section" id="About">
-                <img src={RightLineBlob} alt="RightLineBlob" className="right__line__blob" />
-                <img src={Bubble3} alt="Bubble3" className="bubble3" />
+                <img src={RightLineBlob} alt="RightLineBlob" className="right__line__blob"
+                style={{ transform: `translateY(-${offsetY * 0.07}px)` }} />
+                <img src={Bubble3} alt="Bubble3" className="bubble3" 
+                style={{ transform: `translateY(-${offsetY * 0.19}px)` }}/>
                 <div className="units__content">
                     <div className="units__message">
                         <h2>UNITS</h2>

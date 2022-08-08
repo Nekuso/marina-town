@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { StyledService } from './styles/Service.styled'
 import Service1 from '../img/Service1.png'
 import Service2 from '../img/Service2.png'
@@ -7,11 +7,22 @@ import Bubble1 from '../img/Bubble2.png'
 
 function Service() {
 
+    const [offsetY, setOffsetY] = useState(0);
+    const handleScroll = () => setOffsetY(window.pageYOffset);
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+    
     return (
         <StyledService>
             <div className="service__container" id="Service">
-                <img src={LeftLineBlob} alt="LeftLineBlob" className="left__line__blob" />
-                <img src={Bubble1} alt="Bubble1" className="bubble1" />
+                <img src={LeftLineBlob} alt="LeftLineBlob" className="left__line__blob"
+                style={{ transform: `translateY(-${offsetY * 0.17}px)` }} />
+                <img src={Bubble1} alt="Bubble1" className="bubble1"
+                style={{ transform: `translateY(-${offsetY * 0.07}px)` }} />
                 <div className="service">
                     <img src={Service1} alt="service1" className="service1"/>
                     <div className="service__message__container">

@@ -23,8 +23,8 @@ export const StyledService = styled.div`
         .bubble1 {
             position: absolute;
             right: 5%;
-            bottom: -30%;
-            width: 25vw;
+            bottom: -70%;
+            width: 65vw;
             z-index: -1;
         }
         
@@ -126,8 +126,8 @@ export const StyledService = styled.div`
             .bubble1 {
                 position: absolute;
                 right: 5%;
-                bottom: -30%;
-                width: 20vw;
+                bottom: -50%;
+                width: 40vw;
                 z-index: -1;
             }
             
@@ -172,8 +172,8 @@ export const StyledService = styled.div`
             .bubble1 {
                 position: absolute;
                 right: 5%;
-                bottom: -10%;
-                width: 20vw;
+                bottom: -25%;
+                width: 40vw;
                 z-index: -1;
             }
             
@@ -218,8 +218,8 @@ export const StyledService = styled.div`
             .bubble1 {
                 position: absolute;
                 right: 5%;
-                bottom: -10%;
-                width: 20vw;
+                bottom: -30%;
+                width: 30vw;
                 z-index: -1;
             }
             

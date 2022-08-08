@@ -189,7 +189,7 @@ export const StyledUnits = styled.div`
             .bubble3 {
                 width: 30vw;
                 position: absolute;
-                bottom: -15%;
+                bottom: -35%;
                 left: 0;
                 margin-left: 10vw;
                 z-index: -1;

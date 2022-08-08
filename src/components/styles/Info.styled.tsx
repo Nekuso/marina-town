@@ -37,7 +37,7 @@ export const StyledInfo = styled.div`
             position: absolute;
             width: 150vw;
             right: 0;
-            bottom: -7%;
+            bottom: -17%;
             margin: 0 auto;
             margin-right: -115vw;
         }
@@ -322,7 +322,7 @@ export const StyledInfo = styled.div`
             .bubble3 {
                 width: 30vw;
                 position: absolute;
-                bottom: -15%;
+                bottom: -40%;
                 left: 0;
                 margin: 0 auto;
                 margin-left: 10%;
@@ -331,7 +331,7 @@ export const StyledInfo = styled.div`
                 position: absolute;
                 width: 120vw;
                 right: 0;
-                bottom: -20%;
+                bottom: -50%;
                 margin: 0 auto;
                 margin-right: -95vw;
             }
