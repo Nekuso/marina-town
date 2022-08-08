@@ -6,6 +6,24 @@ export const StyledTour = styled.div `
         justify-content: center;
         align-items: center;
         width: 100vw;
+        position: relative;
+
+        .right__line__blob_2 {
+            position: absolute;
+            width: 90vw;
+            right: 0;
+            bottom: -10%;
+            margin-right: -55vw;
+            z-index: -1;
+        }
+        
+        .bubble1 {
+            position: absolute;
+            width: 50vw;
+            left: 0;
+            bottom: 20%;
+            z-index: -1;
+        }
 
         .tour__content {
             margin: 1rem auto;
@@ -29,6 +47,23 @@ export const StyledTour = styled.div `
 
     @media screen and (min-width: 768px) {
         .tour__section {
+
+            .right__line__blob_2 {
+                position: absolute;
+                width: 130vw;
+                right: 0;
+                bottom: -10%;
+                margin-right: -75vw;
+                z-index: -1;
+            }
+            
+            .bubble1 {
+                position: absolute;
+                width: 50vw;
+                left: 0;
+                bottom: 10%;
+                z-index: -1;
+            }
             .tour__content {
                 width: 85vw;
                 
@@ -49,6 +84,25 @@ export const StyledTour = styled.div `
     @media screen and (min-width: 1000px) {
         .tour__section {
             height: 100vh;
+
+            .right__line__blob_2 {
+                position: absolute;
+                width: 90vw;
+                right: 0;
+                bottom: -15%;
+                margin-right: -45vw;
+                z-index: -1;
+            }
+            
+            .bubble1 {
+                position: absolute;
+                width: 30vw;
+                left: 0;
+                bottom: -20%;
+                margin-left: 5vw;
+                z-index: -1;
+            }
+
             .tour__content {
                 width: 85vw;
                 
@@ -67,6 +121,25 @@ export const StyledTour = styled.div `
 
     @media screen and (min-width: 1200px) {
         .tour__section {
+
+            .right__line__blob_2 {
+                position: absolute;
+                width: 100vw;
+                right: 0;
+                bottom: -25%;
+                margin-right: -55vw;
+                z-index: -1;
+            }
+            
+            .bubble1 {
+                position: absolute;
+                width: 30vw;
+                left: 0;
+                bottom: -15%;
+                margin-left: 5vw;
+                z-index: -1;
+            }
+
             .tour__content {
                 width: 80vw;
                 

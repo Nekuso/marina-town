@@ -1,11 +1,17 @@
 import React from 'react'
 import { StyledLocation } from './styles/Location.styled';
 import LocationImg from '../img/Location.png';
+import LeftLineBlob from '../img/LeftLineBlob.png';
+import Bubble2 from '../img/Bubble2.png';
+import Bubble3 from '../img/Bubble3.png';
 
 function Location() {
   return (
     <StyledLocation>
       <div className="location__section">
+        <img src={LeftLineBlob} alt="LeftLineBlob" className="left__line_blob" />
+        <img src={Bubble2} alt="Bubble2" className="bubble2" />
+        <img src={Bubble3} alt="Bubble3" className="bubble3" />
         <div className="location__content">
           <h2>Location</h2>
           <div className="location__container">

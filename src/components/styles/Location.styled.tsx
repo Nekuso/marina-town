@@ -6,6 +6,34 @@ export const StyledLocation = styled.div `
         justify-content: center;
         align-items: center;
         width: 100vw;
+        position: relative;
+
+        .left__line_blob {
+            width: 80vw;
+            position: absolute;
+            top: 25%;
+            left: 0;
+            margin-left: -30vw;
+            z-index: -1;
+        }
+        
+        .bubble2 {
+            position: absolute;
+            width: 45vw;
+            top: 10%;
+            right: 0;
+            margin-right: 5vw;
+            z-index: -1;
+        }
+        
+        .bubble3 {
+            position: absolute;
+            width: 55vw;
+            bottom: -10%;
+            right: 0;
+            margin-right: 5vw;
+            z-index: -1;
+        }
 
         .location__content {
             width: 90vw;
@@ -67,6 +95,35 @@ export const StyledLocation = styled.div `
 
     @media screen and (min-width: 768px) {
         .location__section {
+
+            .left__line_blob {
+                width: 70vw;
+                position: absolute;
+                top: 60%;
+                left: 0;
+                margin-left: -35vw;
+                z-index: -1;
+            }
+            
+            .bubble2 {
+                position: absolute;
+                width: 25vw;
+                top: 25%;
+                right: 0;
+                left: 0;
+                margin-left: 25vw;
+                z-index: -1;
+            }
+            
+            .bubble3 {
+                position: absolute;
+                width: 30vw;
+                bottom: -25%;
+                right: 0;
+                margin-right: 5vw;
+                z-index: -1;
+            }
+
             .location__content {
                 margin: 0 auto;
                 width: 85vw;
@@ -113,6 +170,35 @@ export const StyledLocation = styled.div `
     @media screen and (min-width: 1000px) {
         .location__section {
             height: 100vh;
+
+            .left__line_blob {
+                width: 70vw;
+                position: absolute;
+                top: 60%;
+                left: 0;
+                margin-left: -35vw;
+                z-index: -1;
+            }
+            
+            .bubble2 {
+                position: absolute;
+                width: 25vw;
+                top: 30%;
+                right: 0;
+                left: 0;
+                margin-left: 35vw;
+                z-index: -1;
+            }
+            
+            .bubble3 {
+                position: absolute;
+                width: 30vw;
+                bottom: -25%;
+                right: 0;
+                margin-right: 15vw;
+                z-index: -1;
+            }
+
             .location__content {
                 width: 85vw;
                 h2{
@@ -154,6 +240,35 @@ export const StyledLocation = styled.div `
 
     @media screen and (min-width: 1200px) {
         .location__section {
+
+            .left__line_blob {
+                width: 75vw;
+                position: absolute;
+                top: 60%;
+                left: 0;
+                margin-left: -35vw;
+                z-index: -1;
+            }
+            
+            .bubble2 {
+                position: absolute;
+                width: 25vw;
+                top: 30%;
+                right: 0;
+                left: 0;
+                margin-left: 35vw;
+                z-index: -1;
+            }
+            
+            .bubble3 {
+                position: absolute;
+                width: 30vw;
+                bottom: -15%;
+                right: 0;
+                margin-right: 10vw;
+                z-index: -1;
+            }
+
             .location__content {
                 width: 70vw;
                 h2{

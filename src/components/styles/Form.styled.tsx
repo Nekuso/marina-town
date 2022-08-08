@@ -6,13 +6,21 @@ export const StyledForm = styled.div`
         justify-content: center;
         align-items: center;
         width: 100vw;
+        position: relative;
+
+        .left__blob__2 {
+            position: absolute;
+            width: 70vw;
+            top: 0;
+            left: 0;
+        }
         
         .form__content {
-            background: #141313;
+            background: #14131350;
             width: 90vw;
             margin: .5rem auto;
             padding: 2.5rem;
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(2px);
 
                 .form__message {
                     h2 {
