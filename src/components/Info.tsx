@@ -11,7 +11,7 @@ function Info() {
     const {scrollY} = useViewportScroll(); 
 
     const y1 = useTransform(useSpring(scrollY, {stiffness: 40, damping: 15}), [0, 1500], [50, -100]);
-    const y2 = useTransform(useSpring(scrollY, {stiffness: 50, damping: 15}), [0, 800], [60, -100]);
+    const y2 = useTransform(useSpring(scrollY, {stiffness: 50, damping: 15}), [0, 1200], [160, -100]);
     const y3 = useTransform(useSpring(scrollY, {stiffness: 60, damping: 15}), [0, 2000], [100, -100]);
     const y4 = useTransform(useSpring(scrollY, {stiffness: 70, damping: 15}), [0, 3000], [200, -100]);
 
