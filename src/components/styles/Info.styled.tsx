@@ -21,7 +21,7 @@ export const StyledInfo = styled.div`
         .bubble2 {
             position: absolute;
             right: 0;
-            top: 65%;
+            top: 75%;
             margin: 0 auto;
             margin-right: 10%;
         }
