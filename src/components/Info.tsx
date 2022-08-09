@@ -3,18 +3,25 @@ import {StyledInfo} from './styles/Info.styled';
 import Bubble1 from '../img/Bubble1.png';
 import Bubble2 from '../img/Bubble2.png';
 import RightBlob from '../img/RightBlob.png';
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
 
 
 function Info() {
+
+    const {scrollY} = useViewportScroll(); 
+    const y1 = useTransform(scrollY, [0, 1500], [0, -100]);
+    const y2 = useTransform(scrollY, [0, 800], [60, -100]);
+    const y3 = useTransform(scrollY, [0, 1000], [100, -100]);
+    const y4 = useTransform(scrollY, [0, 3000], [200, -100]);
 
     return (
 
         <StyledInfo>
             <div className="info__section">
-                <img src={Bubble1} alt="Bubble1" className="bubble1 indexed" />
-                <img src={Bubble2} alt="Bubble2" className="bubble2 indexed" />
-                <img src={Bubble1} alt="Bubble3" className="bubble3 indexed" />
-                <img src={RightBlob} alt="RightBlob" className="rightblob indexed" />
+                <motion.img src={Bubble1} alt="Bubble1" className="bubble1 indexed" style={{y: y1}} />
+                <motion.img src={Bubble2} alt="Bubble2" className="bubble2 indexed" style={{y: y2}} />
+                <motion.img src={Bubble1} alt="Bubble3" className="bubble3 indexed" style={{y: y3}} />
+                <motion.img src={RightBlob} alt="RightBlob" className="rightblob indexed" style={{y: y4}}/>
                 <div className="info" id="Info">
                     <div className="info__destination" >
                         <div className="info__destination__container">
