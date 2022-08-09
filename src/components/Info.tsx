@@ -18,12 +18,12 @@ function Info() {
     return (
 
         <StyledInfo>
-            <div className="info__section">
+            <div className="info__section" id="Info">
                 <motion.img src={Bubble1} alt="Bubble1" className="bubble1 indexed" style={{y: y1}} />
                 <motion.img src={Bubble2} alt="Bubble2" className="bubble2 indexed" style={{y: y2}} />
                 <motion.img src={Bubble1} alt="Bubble3" className="bubble3 indexed" style={{y: y3}} />
                 <motion.img src={RightBlob} alt="RightBlob" className="rightblob indexed" style={{y: y4}}/>
-                <div className="info" id="Info">
+                <div className="info">
                     <div className="info__destination" >
                         <div className="info__destination__container">
                             <h2>A LIFESTYLE DESTINATION</h2>

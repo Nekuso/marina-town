@@ -9,10 +9,10 @@ function Service() {
     
     return (
         <StyledService>
-            <div className="service__container">
+            <div className="service__container" id="Service">
                 <img src={LeftLineBlob} alt="LeftLineBlob" className="left__line__blob" />
                 <img src={Bubble1} alt="Bubble1" className="bubble1" />
-                <div className="service" id="Service">
+                <div className="service">
                     <img src={Service1} alt="service1" className="service1"/>
                     <div className="service__message__container">
                         <div className="service__message">
