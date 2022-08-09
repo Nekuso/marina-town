@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { StyledService } from './styles/Service.styled'
 import Service1 from '../img/Service1.png'
 import Service2 from '../img/Service2.png'
@@ -6,7 +6,6 @@ import LeftLineBlob from '../img/LeftLineBlob.png'
 import Bubble1 from '../img/Bubble2.png'
 
 function Service() {
-
     
     return (
         <StyledService>

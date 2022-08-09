@@ -45,7 +45,7 @@ export const StyledForm = styled.div`
         }
         
         .form__content {
-            background: #14131350;
+            background: #31303091;
             width: 90vw;
             margin: .5rem auto;
             padding: 2.5rem;

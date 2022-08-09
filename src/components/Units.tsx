@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { StyledUnits } from './styles/Units.styled'
 import { data } from '../data'
 import RightLineBlob from '../img/RightLineBlob.png'
@@ -6,14 +6,6 @@ import Bubble3 from '../img/Bubble3.png'
 
 function Units() {
 
-    const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
     
     return (
         <StyledUnits>

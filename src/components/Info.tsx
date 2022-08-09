@@ -4,14 +4,14 @@ import Bubble1 from '../img/Bubble1.png';
 import Bubble2 from '../img/Bubble2.png';
 import RightBlob from '../img/RightBlob.png';
 
+
 function Info() {
 
     return (
 
         <StyledInfo>
             <div className="info__section">
-                <img src={Bubble1} alt="Bubble1" className="bubble1 indexed" 
-                />
+                <img src={Bubble1} alt="Bubble1" className="bubble1 indexed" />
                 <img src={Bubble2} alt="Bubble2" className="bubble2 indexed" />
                 <img src={Bubble1} alt="Bubble3" className="bubble3 indexed" />
                 <img src={RightBlob} alt="RightBlob" className="rightblob indexed" />
