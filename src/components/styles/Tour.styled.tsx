@@ -98,7 +98,7 @@ export const StyledTour = styled.div `
                 position: absolute;
                 width: 30vw;
                 left: 0;
-                bottom: -20%;
+                bottom: -15%;
                 margin-left: 5vw;
                 z-index: -1;
             }
@@ -126,8 +126,8 @@ export const StyledTour = styled.div `
                 position: absolute;
                 width: 100vw;
                 right: 0;
-                bottom: -150%;
-                margin-right: -55vw;
+                bottom: -15%;
+                margin-right: -65vw;
                 z-index: -1;
             }
             
@@ -135,7 +135,7 @@ export const StyledTour = styled.div `
                 position: absolute;
                 width: 30vw;
                 left: 0;
-                bottom: -140%;
+                bottom: -20%;
                 margin-left: 5vw;
                 z-index: -1;
             }
@@ -149,7 +149,7 @@ export const StyledTour = styled.div `
 
                 .tour__container {
                     .vr__tour {
-                        height: 70vh
+                        height: 60vh
                     }
                 }
             }

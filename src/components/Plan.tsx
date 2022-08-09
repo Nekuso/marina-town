@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { StyledPlan } from './styles/Plan.styled';
 import SitePlan from '../img/SitePlan.png';
 import LeftBlob from '../img/LeftBlob.png';
@@ -8,24 +8,12 @@ import Bubble3 from '../img/Bubble3.png';
 
 function Plan() {
 
-    const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-    
     return (
         <StyledPlan>
             <div className="plan__section">
-                <img src={LeftBlob} alt="LeftBlob" className="left__blob"
-                style={{ transform: `translateY(-${offsetY * 0.2}px)` }} />
-                <img src={Bubble1} alt="Bubble1" className="bubble1"
-                style={{ transform: `translateY(-${offsetY * 0.08}px)` }} />
-                <img src={Bubble3} alt="Bubble3" className="bubble3"
-                style={{ transform: `translateY(-${offsetY * 0.12}px)` }} />
+                <img src={LeftBlob} alt="LeftBlob" className="left__blob" />
+                <img src={Bubble1} alt="Bubble1" className="bubble1" />
+                <img src={Bubble3} alt="Bubble3" className="bubble3" />
                 <div className="plan__content">
                     <h2>Site Development Plan</h2>
                     <div className="plan__container">

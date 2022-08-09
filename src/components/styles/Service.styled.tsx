@@ -218,7 +218,7 @@ export const StyledService = styled.div`
             .bubble1 {
                 position: absolute;
                 right: 5%;
-                bottom: -30%;
+                bottom: -20%;
                 width: 30vw;
                 z-index: -1;
             }

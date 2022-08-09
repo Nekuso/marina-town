@@ -199,7 +199,7 @@ export const StyledPlan = styled.div`
             .left__blob {
                 width: 160vw;
                 position: absolute;
-                top: 90%;
+                top: 15%;
                 left: 0;
                 margin-left: -135vw;
                 z-index: -1;
@@ -207,17 +207,18 @@ export const StyledPlan = styled.div`
             .bubble1 {
                 position: absolute;
                 width: 20vw;
-                top: 33%;
+                top: 25%;
                 right: 0;
-                margin-right: 20vw;
+                margin-right: 15vw;
                 z-index: -1;
             }
+            
             .bubble3 {
                 width: 30vw;
                 position: absolute;
                 right: 0;
                 margin-right: 5vw;
-                bottom: -55%;
+                bottom: -15%;
                 z-index: -1;
             }
 

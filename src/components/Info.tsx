@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {StyledInfo} from './styles/Info.styled';
 import Bubble1 from '../img/Bubble1.png';
 import Bubble2 from '../img/Bubble2.png';
@@ -6,27 +6,15 @@ import RightBlob from '../img/RightBlob.png';
 
 function Info() {
 
-    const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
     return (
 
         <StyledInfo>
             <div className="info__section">
                 <img src={Bubble1} alt="Bubble1" className="bubble1 indexed" 
-                style={{ transform: `translateY(-${offsetY * 0.07}px)` }} />
-                <img src={Bubble2} alt="Bubble2" className="bubble2 indexed"
-                style={{ transform: `translateY(-${offsetY * 0.03}px)` }} />
-                <img src={Bubble1} alt="Bubble3" className="bubble3 indexed"
-                style={{ transform: `translateY(-${offsetY * 0.2}px)` }} />
-                <img src={RightBlob} alt="RightBlob" className="rightblob indexed"
-                style={{ transform: `translateY(-${offsetY * 0.1}px)` }} />
+                />
+                <img src={Bubble2} alt="Bubble2" className="bubble2 indexed" />
+                <img src={Bubble1} alt="Bubble3" className="bubble3 indexed" />
+                <img src={RightBlob} alt="RightBlob" className="rightblob indexed" />
                 <div className="info" id="Info">
                     <div className="info__destination" >
                         <div className="info__destination__container">

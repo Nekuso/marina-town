@@ -18,10 +18,8 @@ function Units() {
     return (
         <StyledUnits>
             <div className="units__section">
-                <img src={RightLineBlob} alt="RightLineBlob" className="right__line__blob"
-                style={{ transform: `translateY(-${offsetY * 0.07}px)` }} />
-                <img src={Bubble3} alt="Bubble3" className="bubble3" 
-                style={{ transform: `translateY(-${offsetY * 0.19}px)` }}/>
+                <img src={RightLineBlob} alt="RightLineBlob" className="right__line__blob" />
+                <img src={Bubble3} alt="Bubble3" className="bubble3" />
                 <div className="units__content" id="About">
                     <div className="units__message" >
                         <h2>UNITS</h2>
