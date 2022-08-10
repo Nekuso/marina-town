@@ -20,17 +20,15 @@ function Info() {
         threshold: 0.4,
     })
 
+    const animationSection = useAnimation();
     const animationText = useAnimation();
     const animationText2 = useAnimation();
 
     useEffect(() =>{
         if(inView){
+            animationSection.start("visible");
             animationText.start("visibleText");
             animationText2.start("visibleText2");
-        }
-        else if(!inView){
-            animationText.start("hidden");
-            animationText2.start("hidden");
         }
     },[animationText, animationText2, inView])
 
@@ -38,6 +36,18 @@ function Info() {
         hidden: {
             opacity: 0,
             y: "15vh"
+        },
+        visible: {
+            opacity: 1,
+        },
+        visibleSection: {
+            opacity: 1,
+            transition: {
+                type: 'spring',
+                stiffness: 100,
+                duration: .3,
+                delay: .1,
+            }
         },
         visibleText: {
             opacity: 1,
@@ -62,76 +72,78 @@ function Info() {
     }
 
     return (
+        <motion.div variants={InfoVariants} initial={"hidden"} animate={animationSection}>
 
-        <StyledInfo>
-            <div className="info__section" id="Info">
-                <motion.img src={Bubble1} alt="Bubble1" className="bubble1 indexed" style={{y: y1}} />
-                <motion.img src={Bubble2} alt="Bubble2" className="bubble2 indexed" style={{y: y2}} />
-                <motion.img src={Bubble1} alt="Bubble3" className="bubble3 indexed" style={{y: y3}} />
-                <motion.img src={RightBlob} alt="RightBlob" className="rightblob indexed" style={{y: y4}}/>
+            <StyledInfo>
+                <div className="info__section" id="Info">
+                    <motion.img src={Bubble1} alt="Bubble1" className="bubble1 indexed" style={{y: y1}} />
+                    <motion.img src={Bubble2} alt="Bubble2" className="bubble2 indexed" style={{y: y2}} />
+                    <motion.img src={Bubble1} alt="Bubble3" className="bubble3 indexed" style={{y: y3}} />
+                    <motion.img src={RightBlob} alt="RightBlob" className="rightblob indexed" style={{y: y4}}/>
 
-                <motion.div className="info" ref={ref} 
-                variants={InfoVariants}
-                initial="hidden"
-                animate={animationText}>
-                    <div className="info__destination">
-                        <div className="info__destination__container" >
-                            <h2>A LIFESTYLE DESTINATION</h2>
-                            <div className="info__destination__details">
-                                <div className="destination__details">
-                                    <h3>PROJECT TYPE</h3>
-                                    <p>Mid-Rise Condo</p>
-                                </div>
-                                <div className="destination__details">
-                                    <h3>UNIT AREA</h3>
-                                    <p>20 - 64 sqm ±</p>
-                                </div>
-                                <div className="destination__details">
-                                    <h3>PRICE RANGE</h3>
-                                    <p>PHP 1.94M - 6.29M</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="info__message">
-                            <div className="message">
-                                <p>
-                                    Give your family the freedom to live life to the fullest 
-                                    at Marina Spatial, a mid-rise condo community that
-                                    enjoys an enviable location near Dumaguete Bay, 
-                                    within the dynamic, mixed-use Marina Town 
-                                    development.
-                                </p>
-                            </div>
-                            <div className="message">
-                                <p>
-                                    With modern units, generous common areas and 
-                                    refreshing landscapes, a vibrant lifestyle is in store 
-                                    for the whole family. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
-
-                <motion.div className="reviews__container"
+                    <motion.div className="info" ref={ref} 
                     variants={InfoVariants}
                     initial="hidden"
-                    animate={animationText2}>
-                    <div className="reviews">
-                        <h2>+20K</h2>
-                        <p>Rooms Ready</p>
-                    </div>
-                    <div className="reviews"> 
-                        <h2>+50K</h2>
-                        <p>Costumers</p>
-                    </div>
-                    <div className="reviews">
-                        <h2>+100K</h2>
-                        <p>Reviews</p>
-                    </div>
-                </motion.div>
-            </div>
-        </StyledInfo>
+                    animate={animationText}>
+                        <div className="info__destination">
+                            <div className="info__destination__container" >
+                                <h2>A LIFESTYLE DESTINATION</h2>
+                                <div className="info__destination__details">
+                                    <div className="destination__details">
+                                        <h3>PROJECT TYPE</h3>
+                                        <p>Mid-Rise Condo</p>
+                                    </div>
+                                    <div className="destination__details">
+                                        <h3>UNIT AREA</h3>
+                                        <p>20 - 64 sqm ±</p>
+                                    </div>
+                                    <div className="destination__details">
+                                        <h3>PRICE RANGE</h3>
+                                        <p>PHP 1.94M - 6.29M</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="info__message">
+                                <div className="message">
+                                    <p>
+                                        Give your family the freedom to live life to the fullest 
+                                        at Marina Spatial, a mid-rise condo community that
+                                        enjoys an enviable location near Dumaguete Bay, 
+                                        within the dynamic, mixed-use Marina Town 
+                                        development.
+                                    </p>
+                                </div>
+                                <div className="message">
+                                    <p>
+                                        With modern units, generous common areas and 
+                                        refreshing landscapes, a vibrant lifestyle is in store 
+                                        for the whole family. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    <motion.div className="reviews__container"
+                        variants={InfoVariants}
+                        initial="hidden"
+                        animate={animationText2}>
+                        <div className="reviews">
+                            <h2>+20K</h2>
+                            <p>Rooms Ready</p>
+                        </div>
+                        <div className="reviews"> 
+                            <h2>+50K</h2>
+                            <p>Costumers</p>
+                        </div>
+                        <div className="reviews">
+                            <h2>+100K</h2>
+                            <p>Reviews</p>
+                        </div>
+                    </motion.div>
+                </div>
+            </StyledInfo>
+        </motion.div>
     )
 }
 

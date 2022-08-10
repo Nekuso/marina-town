@@ -48,11 +48,6 @@ export const StyledService = styled.div`
                 width: 100%;
                 height: 100%;
                 border-radius: .5rem;
-                transition: .3s ease-in-out;
-
-                &:hover {
-                    opacity: .5;
-                }
             }
 
             .service1 {

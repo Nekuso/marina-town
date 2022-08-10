@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 function Hero() {
 
     const {ref, inView} = useInView({
-        threshold: 0.2,
+        threshold: 0.1,
     });
 
     const animationSection = useAnimation();
@@ -31,8 +31,8 @@ function Hero() {
             transition: {
                 type: 'spring',
                 stiffness: 100,
-                duration: .7,
-                delay: .2
+                duration: .4,
+                delay: .1
             }
         },
 
