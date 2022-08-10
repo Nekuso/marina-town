@@ -58,12 +58,15 @@ export const StyledUnits = styled.div`
                 width: 100%;
                 height: auto;
                 gap: 1rem;
+                .unit__item {
+
+                }
                 
                 .unit {
+                    flex: 1 1 35%;
                     cursor: pointer;
                     display: grid;
                     justify-items: center;
-                    flex: 1 1 35%;
                     padding: 1rem;
                     border: 1px solid #FFFFFF00;
                     background: #141313;

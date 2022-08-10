@@ -89,7 +89,7 @@ function Units() {
         visibleImage: {
             opacity: 1,
             y: 0,
-        }
+        },
     }
 
     
@@ -124,14 +124,16 @@ function Units() {
                         {
                             data.map((unit, index) => (
                                 <motion.div key={index} className="unit"
-                                variants={UnitsVariants} 
-                                initial={"hiddenImage"}
-                                animate={animationImage}
-                                transition={{
-                                    type: 'spring',
-                                    stiffness: 40,
-                                    duration: 1.2,
-                                    delay: index * 0.6}}>
+                                    variants={UnitsVariants}
+                                    initial={"hiddenImage"}
+                                    animate={animationImage}
+                                    transition={{
+                                        type: 'spring',
+                                        stiffness: 40,
+                                        duration: 1.2,
+                                        delay: index * 0.3
+                                    }}
+                                >
                                     <h2>{unit.name}</h2>
                                     <img src={unit.img} alt="" />
                                     <div className="unit__info">
