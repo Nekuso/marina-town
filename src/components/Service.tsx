@@ -57,7 +57,7 @@ function Service() {
                 type: 'spring',
                 stiffness: 60,
                 duration: 1.8,
-                delay: .6,
+                delay: .4,
             }
         },
         visibleText2: {
@@ -67,7 +67,7 @@ function Service() {
                 type: 'spring',
                 stiffness: 60,
                 duration: 1.8,
-                delay: 1,
+                delay: .6,
             }
         },
         visibleButton: {
@@ -77,7 +77,7 @@ function Service() {
                 type: 'spring',
                 stiffness: 60,
                 duration: 1.8,
-                delay: 1.1,
+                delay: .8,
             }
         },
         visibleImage: {
@@ -87,7 +87,7 @@ function Service() {
                 type: 'spring',
                 stiffness: 50,
                 duration: 1.8,
-                delay: 1,
+                delay: .8,
             }
         },
         visibleImage2: {
@@ -97,7 +97,7 @@ function Service() {
                 type: 'spring',
                 stiffness: 50,
                 duration: 1.8,
-                delay: 1.2,
+                delay: 1,
             }
         }
     }

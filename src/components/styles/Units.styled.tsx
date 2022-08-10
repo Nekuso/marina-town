@@ -67,7 +67,7 @@ export const StyledUnits = styled.div`
                     padding: 1rem;
                     border: 1px solid #FFFFFF00;
                     background: #141313;
-                    transition: 0.3s ease-in-out;
+                    // transition: 0.3s ease-in-out;
                     
                     h2{
                         font-size: 3.5vw;
