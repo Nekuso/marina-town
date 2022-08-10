@@ -4,14 +4,26 @@ import Service1 from '../img/Service1.png'
 import Service2 from '../img/Service2.png'
 import LeftLineBlob from '../img/LeftLineBlob.png'
 import Bubble1 from '../img/Bubble2.png'
+import { useInView } from 'react-intersection-observer';
+import { motion, useSpring, useTransform, useViewportScroll } from 'framer-motion'
 
 function Service() {
+    
+
+    const {ref, inView} = useInView({
+        threshold: 0.4,
+    })
+    const {scrollY} = useViewportScroll();
+
+    const y1 = useTransform(useSpring(scrollY, {stiffness: 30, damping: 15}), [0, 2500], [250, -300]);
+    const y2 = useTransform(useSpring(scrollY, {stiffness: 40, damping: 15}), [0, 2200], [250, -100]);
+
     
     return (
         <StyledService>
             <div className="service__container" id="Service">
-                <img src={LeftLineBlob} alt="LeftLineBlob" className="left__line__blob" />
-                <img src={Bubble1} alt="Bubble1" className="bubble1" />
+                <motion.img src={LeftLineBlob} alt="LeftLineBlob" className="left__line__blob" style={{y: y1}} />
+                <motion.img src={Bubble1} alt="Bubble1" className="bubble1" style={{y: y2}} />
                 <div className="service">
                     <img src={Service1} alt="service1" className="service1"/>
                     <div className="service__message__container">

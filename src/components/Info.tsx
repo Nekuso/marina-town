@@ -1,19 +1,65 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {StyledInfo} from './styles/Info.styled';
 import Bubble1 from '../img/Bubble1.png';
 import Bubble2 from '../img/Bubble2.png';
 import RightBlob from '../img/RightBlob.png';
-import { motion, useViewportScroll, useTransform, useSpring } from 'framer-motion';
+import { motion, useViewportScroll, useTransform, useSpring, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 
 function Info() {
 
     const {scrollY} = useViewportScroll(); 
-
+    
     const y1 = useTransform(useSpring(scrollY, {stiffness: 40, damping: 15}), [0, 1500], [50, -100]);
     const y2 = useTransform(useSpring(scrollY, {stiffness: 50, damping: 15}), [0, 1200], [160, -100]);
     const y3 = useTransform(useSpring(scrollY, {stiffness: 60, damping: 15}), [0, 2000], [100, -100]);
-    const y4 = useTransform(useSpring(scrollY, {stiffness: 70, damping: 15}), [0, 3000], [200, -100]);
+    const y4 = useTransform(useSpring(scrollY, {stiffness: 30, damping: 15}), [0, 3000], [100, -300]);
+    
+    const {ref, inView} = useInView({
+        threshold: 0.4,
+    })
+
+    const animationText = useAnimation();
+    const animationText2 = useAnimation();
+
+    useEffect(() =>{
+        if(inView){
+            animationText.start("visibleText");
+            animationText2.start("visibleText2");
+        }
+        else if(!inView){
+            animationText.start("hidden");
+            animationText2.start("hidden");
+        }
+    },[animationText, animationText2, inView])
+
+    const InfoVariants = {
+        hidden: {
+            opacity: 0,
+            y: "15vh"
+        },
+        visibleText: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                type: 'spring',
+                stiffness: 40,
+                duration: .6,
+                delay: .2,
+            }
+        },
+        visibleText2: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                type: 'spring',
+                stiffness: 40,
+                duration: .6,
+                delay: .5,
+            }
+        }
+    }
 
     return (
 
@@ -23,9 +69,13 @@ function Info() {
                 <motion.img src={Bubble2} alt="Bubble2" className="bubble2 indexed" style={{y: y2}} />
                 <motion.img src={Bubble1} alt="Bubble3" className="bubble3 indexed" style={{y: y3}} />
                 <motion.img src={RightBlob} alt="RightBlob" className="rightblob indexed" style={{y: y4}}/>
-                <div className="info">
-                    <div className="info__destination" >
-                        <div className="info__destination__container">
+
+                <motion.div className="info" ref={ref} 
+                variants={InfoVariants}
+                initial="hidden"
+                animate={animationText}>
+                    <div className="info__destination">
+                        <div className="info__destination__container" >
                             <h2>A LIFESTYLE DESTINATION</h2>
                             <div className="info__destination__details">
                                 <div className="destination__details">
@@ -61,9 +111,12 @@ function Info() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="reviews__container">
+                <motion.div className="reviews__container"
+                    variants={InfoVariants}
+                    initial="hidden"
+                    animate={animationText2}>
                     <div className="reviews">
                         <h2>+20K</h2>
                         <p>Rooms Ready</p>
@@ -76,7 +129,7 @@ function Info() {
                         <h2>+100K</h2>
                         <p>Reviews</p>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </StyledInfo>
     )

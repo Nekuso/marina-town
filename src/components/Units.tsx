@@ -9,10 +9,10 @@ function Units() {
     
     return (
         <StyledUnits>
-            <div className="units__section">
+            <div className="units__section" id="About">
                 <img src={RightLineBlob} alt="RightLineBlob" className="right__line__blob" />
                 <img src={Bubble3} alt="Bubble3" className="bubble3" />
-                <div className="units__content" id="About">
+                <div className="units__content">
                     <div className="units__message" >
                         <h2>UNITS</h2>
                         <p>Space to Pursue Your Passions</p>
