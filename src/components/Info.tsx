@@ -14,7 +14,7 @@ function Info() {
     const y1 = useTransform(useSpring(scrollY, {stiffness: 40, damping: 15}), [0, 1500], [50, -100]);
     const y2 = useTransform(useSpring(scrollY, {stiffness: 50, damping: 15}), [0, 1200], [160, -100]);
     const y3 = useTransform(useSpring(scrollY, {stiffness: 60, damping: 15}), [0, 2000], [100, -100]);
-    const y4 = useTransform(useSpring(scrollY, {stiffness: 30, damping: 15}), [0, 3000], [100, -300]);
+    const y4 = useTransform(useSpring(scrollY, {stiffness: 30, damping: 15}), [0, 2500], [100, -400]);
     
     const {ref, inView} = useInView({
         threshold: 0.4,
