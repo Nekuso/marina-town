@@ -104,49 +104,46 @@ function Service() {
     
     return (
 
-        <motion.div ref={ref}>
-
-            <StyledService>
-                <div className="service__container" id="Service">
-                    <motion.img src={LeftLineBlob} alt="LeftLineBlob" className="left__line__blob" style={{y: y1}} />
-                    <motion.img src={Bubble1} alt="Bubble1" className="bubble1" style={{y: y2}} />
-                    <div className="service">
-                        <motion.img src={Service1} alt="service1" className="service1"
-                        variants={ServiceVariants}
-                        initial="hiddenImage"
-                        animate={animationImage}/>
-                        <div className="service__message__container">
-                            <div className="service__message">
-                                <motion.h2 
-                                variants={ServiceVariants} 
-                                initial={"hiddenText"}
-                                animate={animationText}
-                                >WHAT YOU GET?</motion.h2>
-                                <motion.p
-                                variants={ServiceVariants}
-                                initial={"hiddenText"}
-                                animate={animationText2}
-                                >you will get what you don't get anywhere else such as the cheapest
-                                    price in its class, guaranteed quality of goods, many types of rooms 
-                                    that we provide.
-                                </motion.p>
-                                <motion.div className="service__link"
-                                variants={ServiceVariants}
-                                initial={"hiddenText"}
-                                animate={animationButton}
-                                >
-                                    <a href="/">See more <mark>→</mark></a>
-                                </motion.div>
-                            </div>
+        <StyledService>
+            <motion.div className="service__container" id="Service" ref={ref}>
+                <motion.img src={LeftLineBlob} alt="LeftLineBlob" className="left__line__blob" style={{y: y1}} />
+                <motion.img src={Bubble1} alt="Bubble1" className="bubble1" style={{y: y2}} />
+                <div className="service">
+                    <motion.img src={Service1} alt="service1" className="service1"
+                    variants={ServiceVariants}
+                    initial="hiddenImage"
+                    animate={animationImage}/>
+                    <div className="service__message__container">
+                        <div className="service__message">
+                            <motion.h2 
+                            variants={ServiceVariants} 
+                            initial={"hiddenText"}
+                            animate={animationText}
+                            >WHAT YOU GET?</motion.h2>
+                            <motion.p
+                            variants={ServiceVariants}
+                            initial={"hiddenText"}
+                            animate={animationText2}
+                            >you will get what you don't get anywhere else such as the cheapest
+                                price in its class, guaranteed quality of goods, many types of rooms 
+                                that we provide.
+                            </motion.p>
+                            <motion.div className="service__link"
+                            variants={ServiceVariants}
+                            initial={"hiddenText"}
+                            animate={animationButton}
+                            >
+                                <a href="/">See more <mark>→</mark></a>
+                            </motion.div>
                         </div>
-                        <motion.img src={Service2} alt="service2" className="service2"
-                        variants={ServiceVariants}
-                        initial="hiddenImage2"
-                        animate={animationImage2}/>
                     </div>
+                    <motion.img src={Service2} alt="service2" className="service2"
+                    variants={ServiceVariants}
+                    initial="hiddenImage2"
+                    animate={animationImage2}/>
                 </div>
-            </StyledService>
-        </motion.div>
+            </motion.div>
+        </StyledService>
     )
 }
 

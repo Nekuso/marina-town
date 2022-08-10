@@ -302,9 +302,6 @@ export const StyledInfo = styled.div`
 
     @media screen and (min-width: 1200px) {
         .info__section {
-
-            
-
             .bubble1 {
                 width: 25vw;
                 position: absolute;
