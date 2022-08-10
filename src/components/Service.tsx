@@ -34,7 +34,7 @@ function Service() {
             animationButton.start("visibleButton");
         }
         
-    },[animationText, animationText2, animationImage, animationImage2, inView])
+    },[animationText, animationText2, animationImage, animationImage2, animationButton, inView])
 
     const ServiceVariants = {
         hiddenText: {

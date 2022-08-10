@@ -19,7 +19,7 @@ function Units() {
     const animationImage = useAnimation();
 
     const {ref, inView} = useInView({
-        threshold: 0.4,
+        threshold: 0.7,
     })
 
     useEffect(() => {
@@ -36,7 +36,7 @@ function Units() {
             animationImage.start("hiddenImage");
         }
         
-    },[animationText, animationText2, animationText3, inView])
+    },[animationText, animationText2, animationText3, animationImage, inView])
 
     const UnitsVariants = {
         hiddenText: {
@@ -131,7 +131,7 @@ function Units() {
                                     type: 'spring',
                                     stiffness: 40,
                                     duration: 1.2,
-                                    delay: index * 0.7}}>
+                                    delay: index * 0.6}}>
                                     <h2>{unit.name}</h2>
                                     <img src={unit.img} alt="" />
                                     <div className="unit__info">
