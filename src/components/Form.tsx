@@ -17,7 +17,7 @@ function Form() {
     const y4 = useTransform(useSpring(scrollY, {stiffness: 30, damping: 15}), [0, 5700], [500, -150]);
 
     const {ref, inView} = useInView({
-        threshold: 0.5,
+        threshold: 0.4,
     })
 
     const animation = useAnimation();
