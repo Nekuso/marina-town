@@ -29,12 +29,6 @@ function Units() {
             animationText3.start("visibleText3");
             animationImage.start("visibleImage");
         }
-        if(!inView) {
-            animationText.start("hiddenText");
-            animationText2.start("hiddenText2");
-            animationText3.start("hiddenText3");
-            animationImage.start("hiddenImage");
-        }
         
     },[animationText, animationText2, animationText3, animationImage, inView])
 
@@ -123,22 +117,23 @@ function Units() {
                     <div className="units__container">
                         {
                             data.map((unit, index) => (
-                                <motion.div key={index} className="unit"
+                                <motion.div className="unit__item"
                                     variants={UnitsVariants}
-                                    initial={"hiddenImage"}
-                                    animate={animationImage}
-                                    transition={{
-                                        type: 'spring',
-                                        stiffness: 40,
-                                        duration: 1.2,
-                                        delay: index * 0.3
-                                    }}
-                                >
-                                    <h2>{unit.name}</h2>
-                                    <img src={unit.img} alt="" />
-                                    <div className="unit__info">
-                                        <p>{unit.area}</p>
-                                        <p>{unit.features}</p>
+                                        initial={"hiddenImage"}
+                                        animate={animationImage}
+                                        transition={{
+                                            type: 'spring',
+                                            stiffness: 40,
+                                            duration: 1.2,
+                                            delay: index * 0.3
+                                        }}>
+                                    <div key={index} className="unit">
+                                        <h2>{unit.name}</h2>
+                                        <img src={unit.img} alt="" />
+                                        <div className="unit__info">
+                                            <p>{unit.area}</p>
+                                            <p>{unit.features}</p>
+                                        </div>
                                     </div>
                                 </motion.div>
                             ))

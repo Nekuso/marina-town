@@ -62,6 +62,9 @@ export const StyledUnits = styled.div`
 
                 }
                 
+                .unit__item {
+                    flex: 1 1 35%;
+                }
                 .unit {
                     flex: 1 1 35%;
                     cursor: pointer;
@@ -70,7 +73,7 @@ export const StyledUnits = styled.div`
                     padding: 1rem;
                     border: 1px solid #FFFFFF00;
                     background: #141313;
-                    // transition: 0.3s ease-in-out;
+                    transition: 0.3s ease-in-out;
                     
                     h2{
                         font-size: 3.5vw;
@@ -146,6 +149,9 @@ export const StyledUnits = styled.div`
                 }
 
                 .units__container {
+                    .unit__item {
+                        flex: 0 0 30%;
+                    }
                     .unit {
                         padding: 1.5rem;
                         flex: 0 0 30%;
@@ -220,6 +226,10 @@ export const StyledUnits = styled.div`
                     margin: 0 auto;
                     justify-content: space-between;
 
+                    .unit__item {
+                        flex: 0 0 30%;
+                    }
+
                     .unit {
                         flex: 0 0 30%;
 
@@ -266,6 +276,9 @@ export const StyledUnits = styled.div`
                     margin: 0 auto;
                     justify-content: space-between;
 
+                    .unit__item {
+                        flex: 0 0 30%;
+                    }
                     .unit {
                         flex: 0 0 30%;
 
