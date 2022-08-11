@@ -22,18 +22,30 @@ function Info() {
 
     const animationText = useAnimation();
     const animationText2 = useAnimation();
+    const animationBubbles = useAnimation();
 
     useEffect(() =>{
         if(inView){
             animationText.start("visibleText");
             animationText2.start("visibleText2");
+            animationBubbles.start("visible");
         }
-    },[animationText, animationText2, inView])
+    },[animationText, animationText2, animationBubbles, inView])
 
     const InfoVariants = {
         hidden: {
             opacity: 0,
             y: "15vh"
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                type: 'spring',
+                stiffness: 40,
+                duration: .6,
+                delay: .1,
+            }
         },
         visibleText: {
             opacity: 1,
@@ -59,14 +71,30 @@ function Info() {
 
     return (
 
-        <StyledInfo>
+        <StyledInfo ref={ref} >
             <div className="info__section" id="Info">
-                <motion.img src={Bubble1} alt="Bubble1" className="bubble1 indexed" style={{y: y1}} />
-                <motion.img src={Bubble2} alt="Bubble2" className="bubble2 indexed" style={{y: y2}} />
-                <motion.img src={Bubble1} alt="Bubble3" className="bubble3 indexed" style={{y: y3}} />
-                <motion.img src={RightBlob} alt="RightBlob" className="rightblob indexed" style={{y: y4}}/>
+                <motion.img src={Bubble1} alt="Bubble1" className="bubble1 indexed" style={{y: y1}} 
+                variants={InfoVariants}
+                initial="hidden"
+                animate={animationBubbles}
+                />
+                <motion.img src={Bubble2} alt="Bubble2" className="bubble2 indexed" style={{y: y2}} 
+                variants={InfoVariants}
+                initial="hidden"
+                animate={animationBubbles}
+                />
+                <motion.img src={Bubble1} alt="Bubble3" className="bubble3 indexed" style={{y: y3}} 
+                variants={InfoVariants}
+                initial="hidden"
+                animate={animationBubbles}
+                />
+                <motion.img src={RightBlob} alt="RightBlob" className="rightblob indexed" style={{y: y4}}
+                variants={InfoVariants}
+                initial="hidden"
+                animate={animationBubbles}
+                />
 
-                <motion.div className="info" ref={ref} 
+                <motion.div className="info"
                 variants={InfoVariants}
                 initial="hidden"
                 animate={animationText}>

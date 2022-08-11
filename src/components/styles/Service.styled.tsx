@@ -89,13 +89,21 @@ export const StyledService = styled.div`
                             font-size: 3vw;
                             padding: .5rem 1rem;
                             border: 1px solid #ffffff;
+                            transition: .3s ease-in-out;
                             
                             mark {
                                 background: none;
                                 transition: .3s ease-out;
                             }
                             
+                            &:hover{
+                                scale: 102%;
+                                color: black;
+                                background: white;
+                            }
+                            
                             &:hover mark{
+                                color: black;
                                 padding-left: .5rem;
                             }
                         }

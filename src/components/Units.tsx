@@ -125,7 +125,7 @@ function Units() {
                                             type: 'spring',
                                             stiffness: 40,
                                             duration: 1.2,
-                                            delay: index * 0.3
+                                            delay: index * 0.3,
                                         }}>
                                     <div key={index} className="unit">
                                         <h2>{unit.name}</h2>
