@@ -24,11 +24,6 @@ const GlobalStyles = createGlobalStyle`
         max-width: 100vw;
         overflow-x: hidden;
     }
-
-    .homepage {
-        scroll-snap-type: y mandatory;
-        scroll-snap-align: center;
-    }
     
     ::-webkit-scrollbar {
         width: 15px;
