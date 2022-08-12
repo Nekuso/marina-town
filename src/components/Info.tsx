@@ -147,7 +147,7 @@ function Info() {
                     </div>
                     <div className="reviews"> 
                         <h2>+50K</h2>
-                        <p>Costumers</p>
+                        <p>Customers</p>
                     </div>
                     <div className="reviews">
                         <h2>+100K</h2>
