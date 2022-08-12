@@ -8,15 +8,12 @@ import Plan from '../components/Plan';
 import Service from '../components/Service';
 import Tour from '../components/Tour';
 import Units from '../components/Units';
-import useScrollSnap from 'react-use-scroll-snap';
 
 function Homepage() {
-    const scrollRef = useRef(null);
-    useScrollSnap({ ref: scrollRef, duration: 400, delay: 10, });
 
     
     return (
-        <div className="homepage" ref={scrollRef}>
+        <div className="homepage">
             <Hero/>
             <Info/>
             <Service/>
