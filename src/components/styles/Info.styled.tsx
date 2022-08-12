@@ -4,7 +4,7 @@ export const StyledInfo = styled.div`
     display: flex;
     justify-items: center;
     align-items: center;
-
+    
     .info__section {
         width: 100%;
         height: auto;

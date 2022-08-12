@@ -52,7 +52,7 @@ export const StyledHero = styled.div`
                     border-radius: 100%;
                     padding: 2vw;
                     text-align: center;
-                    font-size: 8vw;
+                    font-size: 6vw;
                     border: 3px solid #FFFF;
                     transition: .3s ease-in-out;
                     
@@ -93,7 +93,7 @@ export const StyledHero = styled.div`
                 .hero__button {
                     margin: 1rem 0;
                     a {
-                        font-size: 5vw;
+                        font-size: 2vw;
                     }
 
                     p {
@@ -127,7 +127,7 @@ export const StyledHero = styled.div`
                 }
                 .hero__button {
                     a {
-                        font-size: 3vw;
+                        font-size: 2vw;
                         padding: 1rem;
                     }
                     p {

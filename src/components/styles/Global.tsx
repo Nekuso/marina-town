@@ -11,11 +11,13 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Poppins';
         color: #FFFFFFFF;
     }
-
+    
     html {
+        scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
         overflow: overlay;
         overflow-x: hidden;
+        
     }
     
     body {
