@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.js": "/marina-town/static/js/main.6fd4487c.js",
+    "static/js/787.8a7ed71f.chunk.js": "/marina-town/static/js/787.8a7ed71f.chunk.js",
+    "static/media/Location.png": "/marina-town/static/media/Location.149c2dfb93f00532a1af.png",
+    "static/media/SitePlan.png": "/marina-town/static/media/SitePlan.fc57e6d56ac778e1116f.png",
+    "static/media/Hero.png": "/marina-town/static/media/Hero.d67f9da2da38ee871f83.png",
+    "static/media/3BedroomUnit.png": "/marina-town/static/media/3BedroomUnit.ac717aa40b3f2f519ea7.png",
+    "static/media/Service1.png": "/marina-town/static/media/Service1.1a8b9b3630de3ecad9a0.png",
+    "static/media/2BedroomUnit.png": "/marina-town/static/media/2BedroomUnit.00b10cfdd2881d785b9c.png",
+    "static/media/Service2.png": "/marina-town/static/media/Service2.f599e0fca25127cfa84c.png",
+    "static/media/StudioUnit.png": "/marina-town/static/media/StudioUnit.a9e9153623bda4664ad6.png",
+    "static/media/RightBlob.png": "/marina-town/static/media/RightBlob.21c3dab667b5503d0fd4.png",
+    "static/media/LeftBlob.png": "/marina-town/static/media/LeftBlob.8495a7d018abf1164b3d.png",
+    "static/media/LeftBlob2.png": "/marina-town/static/media/LeftBlob2.4324b4d83152986716b6.png",
+    "static/media/RightLineBlob.png": "/marina-town/static/media/RightLineBlob.187a68b82fc95fec206b.png",
+    "static/media/MarinaLogo.png": "/marina-town/static/media/MarinaLogo.43356688c85add063972.png",
+    "static/media/LeftLineBlob.png": "/marina-town/static/media/LeftLineBlob.e58125e7cd9b6f68beed.png",
+    "static/media/RightLineBlob2.png": "/marina-town/static/media/RightLineBlob2.ad2e0d7b78259af20c28.png",
+    "index.html": "/marina-town/index.html",
+    "main.6fd4487c.js.map": "/marina-town/static/js/main.6fd4487c.js.map",
+    "787.8a7ed71f.chunk.js.map": "/marina-town/static/js/787.8a7ed71f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.6fd4487c.js"
+  ]
+}
