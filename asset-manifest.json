@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/marina-town/static/js/main.7fb4c3af.js",
+    "main.js": "/marina-town/static/js/main.ba8dc67a.js",
     "static/js/787.8a7ed71f.chunk.js": "/marina-town/static/js/787.8a7ed71f.chunk.js",
     "static/media/Location.png": "/marina-town/static/media/Location.149c2dfb93f00532a1af.png",
     "static/media/SitePlan.png": "/marina-town/static/media/SitePlan.fc57e6d56ac778e1116f.png",
@@ -18,10 +18,10 @@
     "static/media/LeftLineBlob.png": "/marina-town/static/media/LeftLineBlob.e58125e7cd9b6f68beed.png",
     "static/media/RightLineBlob2.png": "/marina-town/static/media/RightLineBlob2.ad2e0d7b78259af20c28.png",
     "index.html": "/marina-town/index.html",
-    "main.7fb4c3af.js.map": "/marina-town/static/js/main.7fb4c3af.js.map",
+    "main.ba8dc67a.js.map": "/marina-town/static/js/main.ba8dc67a.js.map",
     "787.8a7ed71f.chunk.js.map": "/marina-town/static/js/787.8a7ed71f.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.7fb4c3af.js"
+    "static/js/main.ba8dc67a.js"
   ]
 }
