@@ -23,7 +23,7 @@ export const StyledFooter = styled.div`
                 align-items: center;
                 justify-content: center;
                 img {
-                    width: 100%;
+                    width: 70%;
                 }
                 
                 .footer__socials {
@@ -33,8 +33,13 @@ export const StyledFooter = styled.div`
                     margin: 2rem 0;
                     gap: 1rem;
                     a {
+                        transition: .2s ease-in-out;
                         i {
                             font-size: 10vw;
+                        }
+
+                        &:hover {
+                            transform: translateY(-10px);
                         }
                     }
                 }

@@ -7,6 +7,7 @@ export const StyledTour = styled.div `
         align-items: center;
         width: 100vw;
         position: relative;
+        height: 65vh;
 
         .right__line__blob_2 {
             position: absolute;
@@ -47,6 +48,7 @@ export const StyledTour = styled.div `
 
     @media screen and (min-width: 768px) {
         .tour__section {
+            height: 90vh;
 
             .right__line__blob_2 {
                 position: absolute;
@@ -112,7 +114,7 @@ export const StyledTour = styled.div `
 
                 .tour__container {
                     .vr__tour {
-                        height: 70vh
+                        height: 80vh
                     }
                 }
             }
@@ -149,7 +151,7 @@ export const StyledTour = styled.div `
 
                 .tour__container {
                     .vr__tour {
-                        height: 60vh
+                        height: 80vh
                     }
                 }
             }

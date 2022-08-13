@@ -88,6 +88,7 @@ export const StyledLocation = styled.div `
 
                 img {
                     width: 100%;
+                    transition: 0.3s ease-in-out;
                 }
             }
         }

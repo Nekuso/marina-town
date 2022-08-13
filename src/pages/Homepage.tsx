@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Footer from '../components/Footer';
 import Form from '../components/Form';
 import Hero from '../components/Hero';

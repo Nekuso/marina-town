@@ -135,7 +135,7 @@ function Hero() {
                         variants={HeroVariants}
                         initial="hiddenText"
                         animate={animationText4}>
-                            <a href="/"><i className='bx bxs-chevrons-right' ></i></a>
+                            <a href="/marina-town/#About"><i className='bx bxs-chevrons-right' ></i></a>
                             <p>SEE AVAILABLE<br/>
                                 ROOMS
                             </p>

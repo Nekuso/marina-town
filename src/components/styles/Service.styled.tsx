@@ -7,7 +7,7 @@ export const StyledService = styled.div`
         justify-content: center;
         align-items: center;
         width: 100vw;
-        height: auto;
+        height: 35vh;
         margin: 1rem auto;
         position: relative;
 

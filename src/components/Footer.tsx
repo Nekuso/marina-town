@@ -13,6 +13,7 @@ function Footer() {
                         <a href="/"><i className='bx bxl-facebook-circle'></i></a>
                         <a href="/"><i className='bx bxl-instagram' ></i></a>
                         <a href="/"><i className='bx bxl-twitter' ></i></a>
+                        <a href="/"><i className='bx bxl-github' ></i></a>
                     </div>
                 </div>
 
