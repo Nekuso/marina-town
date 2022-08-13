@@ -33,6 +33,7 @@ function Footer() {
                             <li><a href='/' className="Link">Contact</a></li>
                             <li><a href='/' className="Link">Terms & Service</a></li>
                             <li><a href='/' className="Link">Privacy Policy</a></li>
+                            <li><a href='/' className="Link">FAQ</a></li>
                         </ul>
                     </div>
                 </div>
