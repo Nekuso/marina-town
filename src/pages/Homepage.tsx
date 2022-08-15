@@ -11,7 +11,6 @@ import Units from '../components/Units';
 
 function Homepage() {
 
-    
     return (
         <div className="homepage">
             <Hero/>

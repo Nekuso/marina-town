@@ -7,6 +7,7 @@ import GlobalStyle from './components/styles/Global';
 function App() {
   return (
         <BrowserRouter>
+        
             <GlobalStyle/>
               <Navbar/>
               
