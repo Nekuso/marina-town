@@ -6,18 +6,18 @@ import GlobalStyle from './components/styles/Global';
 
 function App() {
   return (
-        <BrowserRouter>
-        
-            <GlobalStyle/>
-              <Navbar/>
-              
-              <div className="content">
-                <Routes>
-                  <Route path="/marina-town" element={<Homepage/>} />
-                </Routes>
-              </div>
+    <BrowserRouter>
 
-        </BrowserRouter>
+        <GlobalStyle/>
+          <Navbar/>
+          
+          <div className="content">
+            <Routes>
+              <Route path="/marina-town" element={<Homepage/>} />
+            </Routes>
+          </div>
+
+    </BrowserRouter>
   );
 }
 

@@ -10,10 +10,10 @@ function Footer() {
                 <div className="footer__logo">
                     <img src={Logo} alt="Logo" />
                     <div className="footer__socials">
-                        <a href="/"><i className='bx bxl-facebook-circle'></i></a>
-                        <a href="/"><i className='bx bxl-instagram' ></i></a>
-                        <a href="/"><i className='bx bxl-twitter' ></i></a>
-                        <a href="/"><i className='bx bxl-github' ></i></a>
+                        <a href="https://www.facebook.com/filinvestdumaguetecity/" rel="noopener noreferrer" target="_blank" ><i className='bx bxl-facebook-circle'></i></a>
+                        <a href="https://www.instagram.com/p/CgVwFI0Olqm/" rel="noopener noreferrer" target="_blank" ><i className='bx bxl-instagram' ></i></a>
+                        <a href="/" rel="noopener noreferrer" target="_blank" ><i className='bx bxl-twitter' ></i></a>
+                        <a href="https://github.com/Nekuso" rel="noopener noreferrer" target="_blank" ><i className='bx bxl-github' ></i></a>
                     </div>
                 </div>
 
