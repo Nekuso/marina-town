@@ -15,5 +15,4 @@
 - See hover states for all interactive elements on the page
 - Parallaxed background using Framer Motion
 
-
 ![preview img](/preview.png)
