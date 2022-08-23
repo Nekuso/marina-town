@@ -6,6 +6,7 @@ import Bubble3 from '../img/Bubble3.png'
 import { useViewportScroll, useTransform, useSpring, motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
+
 function Units() {
 
     const {scrollY} = useViewportScroll();
