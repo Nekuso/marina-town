@@ -103,13 +103,16 @@ function Plan() {
                     variants={PlanVariants}
                     initial="hiddenText"
                     animate={animationText1}
+                    exit="hiddenText"
                     >Site Development Plan</motion.h2>
                     <div className="plan__container">
                         <div className="plan__img">
                             <motion.div
                                 variants={PlanVariants}
                                 initial="hiddenImage"
-                                animate={animationImage}>
+                                animate={animationImage}
+                                exit="hiddenImage"
+                                >
 
                                 <img src={SitePlan} alt="plan"/>
                             </motion.div>
@@ -119,11 +122,13 @@ function Plan() {
                             variants={PlanVariants}
                             initial="hiddenText"
                             animate={animationText2}
+                            exit="hiddenText"
                             >A well-Planned Community</motion.p>
                             <motion.p
                             variants={PlanVariants}
                             initial="hiddenText"
                             animate={animationText3}
+                            exit="hiddenText"
                             >Situated within the 1.9-hectare Marina Town, Marina Spatial is a modern-contemporary themed community with 3 buildings, each 6 to 10 storeys high.</motion.p>
                         </div>
                     </div>

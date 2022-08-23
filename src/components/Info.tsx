@@ -77,27 +77,33 @@ function Info() {
                 variants={InfoVariants}
                 initial="hidden"
                 animate={animationBubbles}
+                exit="hidden"
                 />
                 <motion.img src={Bubble2} alt="Bubble2" className="bubble2 indexed" style={{y: y2}} 
                 variants={InfoVariants}
                 initial="hidden"
                 animate={animationBubbles}
+                exit="hidden"
                 />
                 <motion.img src={Bubble1} alt="Bubble3" className="bubble3 indexed" style={{y: y3}} 
                 variants={InfoVariants}
                 initial="hidden"
                 animate={animationBubbles}
+                exit="hidden"
                 />
                 <motion.img src={RightBlob} alt="RightBlob" className="rightblob indexed" style={{y: y4}}
                 variants={InfoVariants}
                 initial="hidden"
                 animate={animationBubbles}
+                exit="hidden"
                 />
 
                 <motion.div className="info"
                 variants={InfoVariants}
                 initial="hidden"
-                animate={animationText}>
+                animate={animationText}
+                exit="hidden"
+                >
                     <div className="info__destination">
                         <div className="info__destination__container" >
                             <h2>A LIFESTYLE DESTINATION</h2>
@@ -140,7 +146,9 @@ function Info() {
                 <motion.div className="reviews__container"
                     variants={InfoVariants}
                     initial="hidden"
-                    animate={animationText2}>
+                    animate={animationText2}
+                    exit="hidden"
+                    >
                     <div className="reviews">
                         <h2>+20K</h2>
                         <p>Rooms Ready</p>

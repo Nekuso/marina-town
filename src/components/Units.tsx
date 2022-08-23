@@ -101,16 +101,19 @@ function Units() {
                         variants={UnitsVariants}
                         initial="hiddenText"
                         animate={animationText}
+                        exit="hiddenText"
                         >UNITS</motion.h2>
                         <motion.p
                         variants={UnitsVariants}
                         initial="hiddenText2"
                         animate={animationText2}
+                        exit="hiddenText2"
                         >Space to Pursue Your Passions</motion.p>
                         <motion.p
                         variants={UnitsVariants}
                         initial="hiddenText3"
                         animate={animationText3}
+                        exit="hiddenText3"
                         >Marina Spatial offers typical 2-bedroom units with open-plan<br/>
                         layouts for future expansions.</motion.p>
                     </div>
@@ -120,14 +123,15 @@ function Units() {
                             data.map((unit, index) => (
                                 <motion.div className="unit__item"
                                     variants={UnitsVariants}
-                                        initial={"hiddenImage"}
+                                        initial="hiddenImage"
                                         animate={animationImage}
                                         transition={{
                                             type: 'spring',
                                             stiffness: 40,
                                             duration: 1.2,
                                             delay: index * 0.3,
-                                        }}>
+                                        }}
+                                        exit="hiddenImage">
                                     <div key={index} className="unit">
                                         <h2>{unit.name}</h2>
                                         <img src={unit.img} alt="" />

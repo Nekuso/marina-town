@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { StyledNavbar } from './styles/Navbar.styled';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -41,8 +42,10 @@ const Navbar = () => {
                 className={navActive}
                 variants={navVariants}
                 initial="hidden"
-                animate="visible">
-                <li><a href='/marina-town/#Hero' className="Link" onClick={navToggle}>HOME</a></li>
+                animate="visible"
+                exit="hidden"
+                >
+                <li><Link to='/marina-town/' className="Link" onClick={navToggle}>HOME</Link></li>
                 <li><a href='/marina-town/#Info' className="Link" onClick={navToggle}>FEATURES</a></li>
                 <li><a href='/marina-town/#Service' className="Link" onClick={navToggle}>SERVICES</a></li>
                 <li><a href='/marina-town/#About' className="Link" onClick={navToggle}>ABOUT US</a></li>

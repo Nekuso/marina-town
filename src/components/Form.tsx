@@ -89,6 +89,7 @@ function Form() {
                 variants={FormVariable}
                 initial="hidden"
                 animate={animation}
+                exit="hidden"
             >
                 <motion.img src={LeftBlob2} alt="LeftBlob2" className="left__blob__2" 
                 style={{y: y1}}
@@ -108,11 +109,13 @@ function Form() {
                             variants={FormVariable}
                             initial="hidden"
                             animate={animationText1}
+                            exit="hidden"
                         >Let's get in touch</motion.h2>
                         <motion.p
                             variants={FormVariable}
                             initial="hidden"
                             animate={animationText2}
+                            exit="hidden"
                         >Answer the form below to know more this<br/>
                         property. Let's get in touch</motion.p>
                     </div>
@@ -120,6 +123,7 @@ function Form() {
                         variants={FormVariable}
                         initial="hidden"
                         animate={animationForm}
+                        exit="hidden"
                     >
                         <input type="text" required placeholder="First Name*"/>
                         <input type="text" required placeholder="Last Name*"/>

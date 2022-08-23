@@ -132,6 +132,7 @@ function Location() {
             variants={LocationVariants}
             initial="hiddenText"
             animate={animationText}
+            exit="hiddenText"
           >Location</motion.h2>
           <div className="location__container">
             <div className="location__info">
@@ -140,11 +141,13 @@ function Location() {
                   variants={LocationVariants}
                   initial="hiddenText"
                   animate ={animationText1}
+                  exit="hiddenText"
                 >Your Accessible Home</motion.p>
                 <motion.p 
                   variants={LocationVariants}
                   initial="hiddenText"
                   animate ={animationText2}
+                  exit="hiddenText"
                 >Located in EJ Blanco Ave, Brgy. Piapi, Dumaguete City, Negros Oriental within the Marina Town development, Marina Spatial is near malls, schools and other essential destinations.</motion.p>
               </div>
               <div className="location__landmarks">
@@ -152,11 +155,13 @@ function Location() {
                   variants={LocationVariants}
                   initial="hiddenText"
                   animate ={animationText3}
+                  exit="hiddenText"
                 >Landmarks</motion.p>
                 <motion.ul
                   variants={LocationVariants}
                   initial="hiddenText"
                   animate ={animationText4}
+                  exit="hiddenText"
                 >
                   <li>• Sibulan Airport - 4.2 km</li>
                   <li>• Ang Tay Golf Course - 3.5 km</li>
@@ -172,11 +177,10 @@ function Location() {
               variants={LocationVariants}
               initial="hiddenImage"
               animate ={animationImage}
+              exit="hiddenImage"
             />
           </div>
-
         </div>
-
       </div>
     </StyledLocation>
   )

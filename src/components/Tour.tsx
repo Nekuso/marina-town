@@ -71,12 +71,14 @@ function Tour() {
                         variants={TourVariants}
                         initial="hidden"
                         animate={animationText1}
+                        exit="hidden"
                     >Virtual Tour</motion.h2>
 
                     <motion.div className="tour__container"
                         variants={TourVariants}
                         initial="hidden"
                         animate={animationImage}
+                        exit="hidden"
                     >
                         <embed src="https://my.matterport.com/show/?m=H5oN9sTLfGC" type="" className="vr__tour"></embed>
                     </motion.div>

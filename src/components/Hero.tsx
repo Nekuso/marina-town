@@ -105,7 +105,9 @@ function Hero() {
             ref={ref}
             variants={HeroVariants}
             initial="hidden"
-            animate={animationSection}>
+            animate={animationSection}
+            exit="hidden"
+            >
 
             <StyledHero>
                 <div className="hero__section" id="Hero">
@@ -115,18 +117,22 @@ function Hero() {
                             variants={HeroVariants}
                             initial="hiddenText"
                             animate={animationText}
+                            exit="hiddenText"
                             >Marina</motion.h2>
                             <motion.h2
                             variants={HeroVariants}
                             initial="hiddenText"
                             animate={animationText2}
+                            exit="hiddenText"
                             >Town</motion.h2>
                         </div>
                         <div className="hero__subtitle">
                             <motion.p
                             variants={HeroVariants}
                             initial="hiddenText"
-                            animate={animationText3}>
+                            animate={animationText3}
+                            exit="hiddenText"
+                            >
                                 A MODERN URBAN CENTER THAT<br/>
                                 BECOMES A CITY IN ITS TRUEST SENSE
                             </motion.p>
@@ -134,7 +140,9 @@ function Hero() {
                         <motion.div className="hero__button"
                         variants={HeroVariants}
                         initial="hiddenText"
-                        animate={animationText4}>
+                        animate={animationText4}
+                        exit="hiddenText"
+                        >
                             <a href="/marina-town/#About"><i className='bx bxs-chevrons-right' ></i></a>
                             <p>SEE AVAILABLE<br/>
                                 ROOMS

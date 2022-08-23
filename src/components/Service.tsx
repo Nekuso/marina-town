@@ -6,6 +6,7 @@ import LeftLineBlob from '../img/LeftLineBlob.png'
 import Bubble1 from '../img/Bubble2.png'
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation, useSpring, useTransform, useViewportScroll } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 function Service() {
     
@@ -112,18 +113,22 @@ function Service() {
                     <motion.img src={Service1} alt="service1" className="service1"
                     variants={ServiceVariants}
                     initial="hiddenImage"
-                    animate={animationImage}/>
+                    animate={animationImage}
+                    exit="hiddenImage"
+                    />
                     <div className="service__message__container">
                         <div className="service__message">
                             <motion.h2 
                             variants={ServiceVariants} 
                             initial={"hiddenText"}
                             animate={animationText}
+                            exit={"hiddenText"}
                             >WHAT YOU GET?</motion.h2>
                             <motion.p
                             variants={ServiceVariants}
                             initial={"hiddenText"}
                             animate={animationText2}
+                            exit={"hiddenText"}
                             >you will get what you don't get anywhere else such as the cheapest
                                 price in its class, guaranteed quality of goods, many types of rooms 
                                 that we provide.
@@ -132,15 +137,18 @@ function Service() {
                             variants={ServiceVariants}
                             initial={"hiddenText"}
                             animate={animationButton}
+                            exit={"hiddenText"}
                             >
-                                <a href="/">See more <mark>→</mark></a>
+                                <Link to="/marina-town/Service">See more <mark>→</mark></Link>
                             </motion.div>
                         </div>
                     </div>
                     <motion.img src={Service2} alt="service2" className="service2"
                     variants={ServiceVariants}
                     initial="hiddenImage2"
-                    animate={animationImage2}/>
+                    animate={animationImage2}
+                    exit="hiddenImage2"
+                    />
                 </div>
             </motion.div>
         </StyledService>
