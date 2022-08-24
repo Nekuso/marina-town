@@ -1,13 +1,12 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import Form from '../components/Form';
 import Hero from '../components/Hero';
 import Info from '../components/Info';
+import Form from '../components/Form';
 import Location from '../components/Location';
+import Units from '../components/Units';
 import Plan from '../components/Plan';
 import Service from '../components/Service';
 import Tour from '../components/Tour';
-import Units from '../components/Units';
 
 function Homepage() {
 
@@ -21,7 +20,6 @@ function Homepage() {
             <Location/>
             <Tour/>
             <Form/>
-            <Footer/>
         </div>
     )
 }
