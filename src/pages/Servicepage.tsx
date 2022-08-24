@@ -5,7 +5,7 @@ function Servicepage() {
   return (
     <StyledServicepage>
       <div className="servicepage__container">
-          <h1>INFO</h1>
+          <h1 id="Servicepage">INFO</h1>
       </div>
     </StyledServicepage>
   )

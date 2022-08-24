@@ -50,6 +50,27 @@ function Service() {
             opacity: 0,
             x: "20px"
         },
+        exitText: {
+            opacity: 0,
+            y: "-30px",
+            transition: {
+                duration: .8,
+            }
+        },
+        exitImage: {
+            opacity: 0,
+            x: "-20px",
+            transition: {
+                duration: .8,
+            }
+        },
+        exitImage2: {
+            opacity: 0,
+            x: "20px",
+            transition: {
+                duration: .8,
+            }
+        },
 
         visibleText: {
             opacity: 1,
@@ -107,14 +128,32 @@ function Service() {
 
         <StyledService>
             <motion.div className="service__container" id="Service" ref={ref}>
-                <motion.img src={LeftLineBlob} alt="LeftLineBlob" className="left__line__blob" style={{y: y1}} />
-                <motion.img src={Bubble1} alt="Bubble1" className="bubble1" style={{y: y2}} />
+                <motion.img 
+                    src={LeftLineBlob} 
+                    alt="LeftLineBlob" 
+                    className="left__line__blob" 
+                    style={{y: y1}}
+                    variants={ServiceVariants} 
+                    initial={"hiddenText"}
+                    animate={animationText}
+                    exit={"exitImage"}
+                     />
+                <motion.img 
+                    src={Bubble1} 
+                    alt="Bubble1" 
+                    className="bubble1" 
+                    style={{y: y2}}
+                    variants={ServiceVariants} 
+                    initial={"hiddenText"}
+                    animate={animationText}
+                    exit={"exitImage2"}
+                    />
                 <div className="service">
                     <motion.img src={Service1} alt="service1" className="service1"
                     variants={ServiceVariants}
                     initial="hiddenImage"
                     animate={animationImage}
-                    exit="hiddenImage"
+                    exit="exitImage"
                     />
                     <div className="service__message__container">
                         <div className="service__message">
@@ -122,13 +161,13 @@ function Service() {
                             variants={ServiceVariants} 
                             initial={"hiddenText"}
                             animate={animationText}
-                            exit={"hiddenText"}
+                            exit={"exitText"}
                             >WHAT YOU GET?</motion.h2>
                             <motion.p
                             variants={ServiceVariants}
                             initial={"hiddenText"}
                             animate={animationText2}
-                            exit={"hiddenText"}
+                            exit={"exitText"}
                             >you will get what you don't get anywhere else such as the cheapest
                                 price in its class, guaranteed quality of goods, many types of rooms 
                                 that we provide.
@@ -137,7 +176,7 @@ function Service() {
                             variants={ServiceVariants}
                             initial={"hiddenText"}
                             animate={animationButton}
-                            exit={"hiddenText"}
+                            exit={"exitText"}
                             >
                                 <Link to="/marina-town/Service">See more <mark>→</mark></Link>
                             </motion.div>
@@ -147,7 +186,7 @@ function Service() {
                     variants={ServiceVariants}
                     initial="hiddenImage2"
                     animate={animationImage2}
-                    exit="hiddenImage2"
+                    exit="exitImage2"
                     />
                 </div>
             </motion.div>

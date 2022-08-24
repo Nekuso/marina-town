@@ -11,7 +11,6 @@ function App() {
     <Router>
       <GlobalStyle/>
       <Navbar/>
-
       <div className="content">
         <AnimatedRoutes/>
       </div>

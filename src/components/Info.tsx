@@ -37,6 +37,20 @@ function Info() {
             opacity: 0,
             y: "15vh"
         },
+        exitText: {
+            opacity: 0,
+            x: "-15vw",
+            transition: {
+                duration: 1,
+            }
+        },
+        exitText2: {
+            opacity: 0,
+            x: "15vw",
+            transition: {
+                duration: 1,
+            }
+        },
         visible: {
             opacity: 1,
             y: 0,
@@ -102,7 +116,7 @@ function Info() {
                 variants={InfoVariants}
                 initial="hidden"
                 animate={animationText}
-                exit="hidden"
+                exit="exitText"
                 >
                     <div className="info__destination">
                         <div className="info__destination__container" >
@@ -147,7 +161,7 @@ function Info() {
                     variants={InfoVariants}
                     initial="hidden"
                     animate={animationText2}
-                    exit="hidden"
+                    exit="exitText2"
                     >
                     <div className="reviews">
                         <h2>+20K</h2>
