@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import {StyledInfo} from './styles/Info.styled';
-import Bubble1 from '../img/Bubble1.png';
-import Bubble2 from '../img/Bubble2.png';
-import RightBlob from '../img/RightBlob.png';
+import {StyledInfo} from '../../../styles/Info.styled';
+import Bubble1 from '../../../../img/Bubble1.png';
+import Bubble2 from '../../../../img/Bubble2.png';
+import RightBlob from '../../../../img/RightBlob.png';
 import { motion, useViewportScroll, useTransform, useSpring, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 

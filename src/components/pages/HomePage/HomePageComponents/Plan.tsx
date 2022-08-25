@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import { StyledPlan } from './styles/Plan.styled';
-import SitePlan from '../img/SitePlan.png';
-import LeftBlob from '../img/LeftBlob.png';
-import Bubble1 from '../img/Bubble1.png';
-import Bubble3 from '../img/Bubble3.png';
+import { StyledPlan } from '../../../styles/Plan.styled';
+import SitePlan from '../../../../img/SitePlan.png';
+import LeftBlob from '../../../../img/LeftBlob.png';
+import Bubble1 from '../../../../img/Bubble1.png';
+import Bubble3 from '../../../../img/Bubble3.png';
 import { useViewportScroll, useTransform, useSpring, motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 

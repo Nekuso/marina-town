@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import { StyledForm } from './styles/Form.styled';
-import LeftBlob2 from '../img/LeftBlob2.png';
-import Bubble1 from '../img/Bubble1.png';
-import Bubble3 from '../img/Bubble2.png';
-import RightLineBlob from '../img/RightLineBlob.png';
+import { StyledForm } from '../../../styles/Form.styled';
+import LeftBlob2 from '../../../../img/LeftBlob2.png';
+import Bubble1 from '../../../../img/Bubble1.png';
+import Bubble3 from '../../../../img/Bubble2.png';
+import RightLineBlob from '../../../../img/RightLineBlob.png';
 import { useTransform, useSpring, useViewportScroll, motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 

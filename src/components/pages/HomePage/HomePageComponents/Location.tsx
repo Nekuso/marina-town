@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import { StyledLocation } from './styles/Location.styled';
-import LocationImg from '../img/Location.png';
-import LeftLineBlob from '../img/LeftLineBlob.png';
-import Bubble2 from '../img/Bubble2.png';
-import Bubble3 from '../img/Bubble3.png';
+import { StyledLocation } from '../../../styles/Location.styled';
+import LocationImg from '../../../../img/Location.png';
+import LeftLineBlob from '../../../../img/LeftLineBlob.png';
+import Bubble2 from '../../../../img/Bubble2.png';
+import Bubble3 from '../../../../img/Bubble3.png';
 import { useViewportScroll, useTransform, useSpring, useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 

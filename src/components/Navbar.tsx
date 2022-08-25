@@ -47,7 +47,7 @@ const Navbar = () => {
                 >
                 <li><Link to='/marina-town/' className="Link" onClick={navToggle}>HOME</Link></li>
                 <li><a href='/marina-town/#Info' className="Link" onClick={navToggle}>FEATURES</a></li>
-                <li><a href='/marina-town/#Service' className="Link" onClick={navToggle}>SERVICES</a></li>
+                <li><Link to='/marina-town/Service' className="Link" onClick={navToggle}>SERVICES</Link></li>
                 <li><a href='/marina-town/#About' className="Link" onClick={navToggle}>ABOUT US</a></li>
             </motion.ul>
 

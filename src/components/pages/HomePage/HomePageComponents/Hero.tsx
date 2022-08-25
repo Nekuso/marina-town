@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { StyledHero } from './styles/Hero.styled';
+import { StyledHero } from '../../../styles/Hero.styled';
 import {motion, useAnimation} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 

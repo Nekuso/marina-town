@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import { StyledTour } from './styles/Tour.styled'
-import RightLineBlob2 from '../img/RightLineBlob2.png'
-import Bubble1 from '../img/Bubble1.png'
+import { StyledTour } from '../../../styles/Tour.styled'
+import RightLineBlob2 from '../../../../img/RightLineBlob2.png'
+import Bubble1 from '../../../../img/Bubble1.png'
 import { useViewportScroll, useTransform, useSpring, motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
