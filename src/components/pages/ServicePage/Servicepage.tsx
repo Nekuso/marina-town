@@ -30,9 +30,6 @@ function Servicepage() {
         initial="hidden"
         animate="visible"
         exit="exit">
-          <h1 id="Servicepage">
-            Service
-          </h1>
       </motion.div>
     </StyledServicepage>
   )

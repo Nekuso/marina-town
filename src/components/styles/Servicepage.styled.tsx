@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const StyledServicepage = styled.div`
     .servicepage__container {
-        background: green;
-        width: 90vw;
+        width: 100%;
         height: 100vh;
         margin: auto;
         display: flex;

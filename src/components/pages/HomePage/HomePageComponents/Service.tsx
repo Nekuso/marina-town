@@ -178,7 +178,7 @@ function Service() {
                             animate={animationButton}
                             exit={"exitText"}
                             >
-                                <Link to="/marina-town/Service">See more <mark>→</mark></Link>
+                                <Link to="/marina-town/">See more <mark>→</mark></Link>
                             </motion.div>
                         </div>
                     </div>
