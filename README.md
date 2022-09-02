@@ -2,7 +2,6 @@
     <img height="auto" width="auto" src="/src/img/MarinaLogo.png"/>
 </p>
 
-
 <p align="left">
     <img height="auto" width="auto" src="/src/img/Badge.svg"/>
 </p>
@@ -14,5 +13,6 @@
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Parallaxed background using Framer Motion
+
 
 ![preview img](/preview.png)
