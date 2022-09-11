@@ -21,6 +21,7 @@ export const StyledNavbar = styled.div `
             }
         }
     }
+
     @media (max-width: 768px) {
         padding: 1.5rem 0;
         max-width: 90vw;

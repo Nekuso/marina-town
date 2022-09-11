@@ -137,7 +137,7 @@ function Service() {
                     initial={"hiddenText"}
                     animate={animationText}
                     exit={"exitImage"}
-                     />
+                    />
                 <motion.img 
                     src={Bubble1} 
                     alt="Bubble1" 
